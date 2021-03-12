@@ -1,0 +1,5 @@
+qemu-img convert -O vdi image.qcow2 image.vdi
+                 or
+VBoxManage convertdd kali4.qcow2 kali4.vdi --format VDI
+
+VBoxManage clonehd kali4.vdi kali4.img --format raw
