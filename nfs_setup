@@ -1,0 +1,28 @@
+# nfs server installation and configuration
+server side
+sudo apt-get install nfs-kernel-server
+
+create diretory whih you want to share with others 
+sudo mkdir /nfsshare 
+sudo chown -R nobody:nogroup /nfsshare 
+sudo chmod -R 777 /nfsshare
+do entry in /etc/exports 
+/mnt/nfsshare  clientip/32(rw,sync,no_subtree_check)
+--------------------------------------------------------
+rw: Stands for Read/Write.
+sync: Requires changes to be written to the disk before they are applied.
+No_subtree_check: Eliminates subtree checking.
+
+The option 'no_root_squash' basically allows the root user on the client to access/create files on the NFS server as root. 
+Typically this is needed if you are hosting root filesystems on the NFS server (for diskless clients). If you don't things break
+
+--------------------------------------------------------
+sudo service nfs-kernel-server restart
+
+
+
+client side :- 
+
+sudo apt-get install nfs-common
+sudo showmount -e serverip
+sudo mount serverip:/nfsshare /mnt
