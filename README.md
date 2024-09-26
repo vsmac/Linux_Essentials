@@ -1,7 +1,7 @@
 # Linux 'cd' command
  # go to home directory
  1. cd
- # go to 'directory_nname'
+ # go to 'directory_name'
  2. cd <directory_name>
  #  Go to the root directory:
  3. cd /
