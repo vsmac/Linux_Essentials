@@ -1,52 +1,33 @@
 # cd commnds pratice
 
-cd  # Moves you to your home directory
+cd    # Moves you to your home directory
 
+cd <directory_name>   # Moves you to specified directory
 
+cd ..   # Go to the Parent Directory or one directory back
+{Example}
+cd /home/user/raja/nisahnt
+cd ..  # we will go to the /home/user/raja
 
-cd .
-# Stay in the current directory "useful for indicating "no change"
+cd ~   # Move you to the home directory
 
-cd ..
-# Go to the Parent Directory:
-# Example
-# cd /home/user/Documents/Projects
-# cd .. # run this command
-# cd /home/user/Documents
+cd -   # Switch back to the previous directory
 
-cd ~
-# Move to the home directory: If you are currently in any other directory and run:
+cd /   # Change to the root directory
 
-cd -
-# Switch back to the previous directory:
+cd ../..   # Move up two levels in the directory tree or move two directs ory back
+{Example}
+cd /home/user/raja/nishant
+cd ../../  # we will go to /home/user/
 
-cd /
-# Change to the root directory:
+cd !$   # This is a special variable in the shell that refers to the last argument of the previous command
+{Example}
+mkdir raja
+cd !$ # we wlii go to the raja
 
-cd ../..
-# Move up two levels in the directory tree:
-# Example
-# /home/user/Documents/Projects/Code
-# cd ../../ # run this command
-# /home/user/Documents
+ cd && <another_command>   # change directory and then run the command
 
-cd -P
-# Follow the physical directory structure, avoiding symlinks
-# Example
-# ln -s /actual/path /symlink/path
-# cd /symlink/path  # Takes you to /actual/path
-
-cd !$
-# This is a special variable in the shell that refers to the last argument of the previous command
-# Example
-# Suppose you want to create a directory called Project:
-# mkdir project
-# cd !$ - run this command 
-# cd project
-
-cd -P
-# is useful for changing to the physical directory and avoiding the symbolic link structure
-# Example
- # ln -s /actual/path /symlink/path
- # cd /symlink/path  # Takes you to /actual/path
- 
+cd -P  # is useful for changing to the physical directory and avoiding the symbolic link structure
+{Example}
+ln -s raja nishant
+cd -P nishant  # take you to raja
