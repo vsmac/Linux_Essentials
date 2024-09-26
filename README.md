@@ -15,7 +15,7 @@ cd -   # Switch back to the previous directory
 
 cd /   # Change to the root directory
 
-cd ../..   # Move up two levels in the directory tree or move two directs ory back
+cd ../..   # Move up two levels in the directory tree or move two directory back
 {Example}
 cd /home/user/raja/nishant
 cd ../../  # we will go to /home/user/
