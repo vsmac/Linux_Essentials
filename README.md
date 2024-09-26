@@ -1,9 +1,8 @@
 # cd commnds pratice
 
-cd 
-# Moves you to your home directory;
-# example;
-# cd /home/user/Documents
+cd  # Moves you to your home directory
+
+
 
 cd .
 # Stay in the current directory "useful for indicating "no change"
