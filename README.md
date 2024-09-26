@@ -9,7 +9,7 @@ cd ..
 # to move back one directory
 
 cd -
-# To go back to the last directory you were in, use:
+# To go back to the last directory you were in,
 
 cd ~
 # Go to home directory
