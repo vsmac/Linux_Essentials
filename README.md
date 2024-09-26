@@ -1,5 +1,5 @@
 
-![Uploading Devops1.jpeg…]()
+![Devops1](https://github.com/user-attachments/assets/c1df9c98-dd96-4ae2-b817-10d80303b2b9)
 
 
 # cd commnds pratice
