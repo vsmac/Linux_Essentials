@@ -7,6 +7,5 @@ cd ..
 cd ~
 # Move to the root directory
 cd /
-This 
 # command brings you back to the home directory.
 cd /home/user/Documentsls
