@@ -50,26 +50,4 @@ cd -P
 # Example
  # ln -s /actual/path /symlink/path
  # cd /symlink/path  # Takes you to /actual/path
-
  
- 
- 
- 
- 
-
-
- 
- 
-
-
-
-
-
-
-
-
-
- 
-
-
-
