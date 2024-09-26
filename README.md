@@ -1,3 +1,7 @@
+
+![Uploading Devops1.jpeg…]()
+
+
 # cd commnds pratice
 
 cd    # Moves you to your home directory
