@@ -14,8 +14,6 @@ cd -
 # To change to the previous directory from the current working directory
 cd /
 # To change the directory to parent directory of the current working directory
-cd ~<username>
-# We can change the directory from the current working directory to a user's home directory
 cd <directoryname>
 # To changes the working directory
 cd <directorypath>
