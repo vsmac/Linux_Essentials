@@ -1,5 +1,5 @@
 # linux command pratice
-# the directory that contains your current directory:
+# To move one level up in the directory hierarchy:
 cd ..
 # To return to your home directory 
 cd
