@@ -9,3 +9,5 @@ cd ~
 cd /
 # command brings you back to the home directory.
 cd /home/user/Documentsls
+ # If you want to change to the actual directory without following the symbolic link, you would use:
+cd -P symlink
