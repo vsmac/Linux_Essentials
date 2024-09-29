@@ -1,0 +1,28 @@
+mkdir  # create a new directory
+{Example}
+mkdir <raja>  # A directory named Raja was created
+
+mkdir -p #  Create a parent directory structure
+{Example}
+mkdir -p  A/B/C/D/E   #  Create a parent directory structure A/B/C/D/Example
+
+mkdir -v  # Create directories with verbose output
+{Example}
+mkdir -v  <raja>  # mkdir: created directory 'raja'
+
+mkdir -m  # Create a directory with specific permissions
+{Example}
+mkdir -m <777>  raja  # The directory named Raja has 777 permissions
+
+rmdir  #   Remove an Empty Directory
+{Example}
+rmdir <raja>  # delete raja named directory
+
+rmdir -p  #  Remove parent directories if they become empty
+{Example}
+rmdir -p sachin/manku/raja/  # remove parent directory sachin/manku/raja
+
+rmdir -v #  Verbose mode (output each removed directory)
+{Example}
+rmdir -v raja #  rmdir: removing directory, 'raja'
+
