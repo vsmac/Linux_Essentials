@@ -1,0 +1,44 @@
+mv  # this mv command use to move or rename files amd directories
+{EXAMPLE}
+mv raja /home/ubuntu/directory name  # The file named raja will be moved to the /home/ubuntu/directory name
+
+mv raja raja.txt  # raja name file rename raja.txt
+
+mv -i  # this command use to asking Prompt Before Overwriting
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp test test.txt/
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ mv -i test test.txt/
+mv: overwrite 'test.txt/test'? y
+
+mv -f  #  this command use to without asking prompt before overwrtiting
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp test test.txt/
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ mv -i test test.txt/
+
+mv -v  #  this command use to show the details of the move  with Verbose Output
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir test.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ touch test
+ubuntu@LAPTOP-UDS8CQ6E:~$ mv -v test test.txt/
+renamed 'test' -> 'test.txt/test'
+
+mv *.txt  #   Move Files Matching a Pattern
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ touch raja.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ touch nishant.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ mv *txt testing/
+ubuntu@LAPTOP-UDS8CQ6E:~$ ls testing/
+nishant.txt  raja.txt
+
+
+
+
+
+
+
+
