@@ -1,0 +1,51 @@
+cp  # The cp command is used to copy files and directories from one location to another location
+{Example}
+cp file name directory name
+cp raja test  #  The file named raja was copied to the directory named test.
+
+cp -r  #  this command use to  Recursively copy directories
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir -p raja/nishant/aman
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir test.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp raja/nishant/aman/ test.txt/
+cp: -r not specified; omitting directory 'raja/nishant/aman/'
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -r raja/nishant/aman/ test.txt/
+
+cp -i  #  this command use to Prompt before overwriting a file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file1 - {hello world}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file2 - {i am raja gaur}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -i file1 file2
+cp: overwrite 'file2'? y
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat file2
+hello world
+
+cp -f  #  this command use to Force overwriting without asking for confirmation
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file1 - {i am nishant gaur}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file2 - {i am raja gaur}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -f file1 file2
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat  file2
+i am nishant gaur
+
+cp -v  #   this command use to Copy with Verbose Output
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -v index.html raja
+'index.html' -> 'raja/index.html'
+index.html - file
+raja - directory
+
+cp -p  #  this command use to Preserve File Attributes
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file1
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file2
+ubuntu@LAPTOP-UDS8CQ6E:~$ chmod 777 file1
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -p file1 file2 # file2 has also got 777 permissions
+
+cp -b  #  this command use to  Create a backup of the destination file before overwriting
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file1 -{i am student}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim file2 -{i am student of polytechnic}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cp -b file1 file2
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat file2
+i am student # automatecally A file will be created named file2~ which will contain your old data.
+
