@@ -22,8 +22,8 @@ head <filename>   Display the frist 10 lines
 head -n <number_of_lines> <filename>  Display a Specific Number of Lines
 # example: head -n 5 myfile.txt  Display the First 5 Lines 
 
-head -n 20 -f /var/log/syslog   Monitor a File in Real-Time 
-# example: head -n 20 -f /var/log/syslog
+head -n 20 <filename> To display the first 20 lines 
+# example: head -n 20 /var/log/syslog
 
 head <file1> <file2>   Multiple Files You can use tail to display the frist lines of multiple files
 # example: tail /var/log/syslog /var/log/auth.log
