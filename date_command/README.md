@@ -5,19 +5,14 @@
  
  1. date +%d      # used to display Day of the month (01-31)
      {example}  02
-
  2. date +%D      # used to display date (%m/%d/%y)
      {example}  10/02/24
-
  3. date +%a      # used to display weekday name (Wed)
       {example}  Wed
-
  4. date +%A      # used to display weekday name (Wednesday)
       {example}  Wednesday
-
  5. date +%b      # used to display month name  (Oct)
       {example}   Oct
-
  6. date +%B      # used to display month name  (October)
      {example}    October
  7. date +%c      # used to display date and time (Wed Oct  2 07:56:06 2024) 
@@ -27,7 +22,7 @@
  9. date +%e      # used to display day of month (%d)
        {example}    2
  10.date +%F     # used to dispaly full date ( %+4Y-%m-%d)
-      {example}  2024-10-02
+       {example}  2024-10-02
  11.date +%g     # used to display two last digit of year     
       {example}   24
  12.date +%H     # used to display  hours (00..23) 
