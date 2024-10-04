@@ -1,0 +1,23 @@
+wc  # this command use to count the number of line, words, characters,and bytes in a files
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ wc test
+  9  40 183 test
+
+  wc -l  #  this command use to how many lines our file
+  {Example}
+  ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ wc -l test
+9 test
+
+wc -w  #  this command use to how many words in our file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ wc -w test
+40 test
+
+wc -c  #  this command use to how many letters in our file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim test
+ubuntu@LAPTOP-UDS8CQ6E:~$ wc -c test
+183 test
