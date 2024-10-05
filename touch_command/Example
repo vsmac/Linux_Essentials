@@ -1,0 +1,41 @@
+what is touch command  #  The touch command in Unix/Linux is  used to create empty files or update the timestamps (access and modification time) of existing files
+{Example}
+touch raja.txt  # create raja named file but this file is empaty
+
+touch -t  #  this command use to Set a Specific Date and Time of files
+{Example}
+touch file.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ touch -t 202403101201 file.txt
+[2024] -year
+[03] - date
+[10] - month
+[12] - hours
+[01] - minutes
+touch -t [[CC]YY]MMDDhhmm[.ss] file1
+CC = first two digits of the year
+YY = last two digits of the year
+MM = month (01–12)
+DD = day (01–31)
+hh = hour (00–23, 24-hour format)
+mm = minutes (00–59)
+.ss = seconds
+
+touch -r  #  this command use to  allows you to set the timestamp of a file to match the timestamp of another file
+{Example}
+-rw-r--r-- 1 ubuntu  ubuntu     0 Mar 11  2026 file1
+-rw-r--r-- 1 ubuntu  ubuntu     0 Oct  5 14:13 file2
+touch -r file2 file1
+-rw-r--r-- 1 ubuntu  ubuntu     0 Oct  5 14:13 file1
+-rw-r--r-- 1 ubuntu  ubuntu     0 Oct  5 14:13 file2
+
+touch -c  #  this command work to If the  does not exist, do not create it. Only update the timestamp if the file exists
+{Example}
+-rw-r--r-- 1 ubuntu  ubuntu     0 Oct  5 14:17 testing
+touch -c testing
+-rw-r--r-- 1 ubuntu  ubuntu     0 Oct  5 14:21 testing
+
+touch -d  #  this command use to allows you to set the timestamp of a file to a specific date and time using a human-readable format
+{Example}
+-rw-r--r-- 1 ubuntu  ubuntu     0 Nov  5  2026 raja
+ubuntu@LAPTOP-UDS8CQ6E:~$   touch -d "2025-11-08 15:30" raja
+-rw-r--r-- 1 ubuntu  ubuntu     0 Nov  8  2025 raja
