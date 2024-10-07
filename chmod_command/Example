@@ -59,6 +59,36 @@ chmod -R # this command use to  Recursively change permissions for directories a
     ├── logo.png     # permissions: -rwxr-xr-x
     └── banner.jpg   # permissions: -rwxr-xr-x
 
+#  how to remove file or directory
+  chmod u-w file.txt  #  this command use to Remove write permission for the user
+  {Example}
+  -rwxrwxrwx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+  chmod u-w file.txt
+  -r-xrwxrwx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+
+ chmod g-x file.txt  #  this command use to Remove execute permission for the group
+ {Example}
+ -r-xrwxrwx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+ chmod g-x file.txt
+-r-xrw-rwx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+
+chmod o-r file.txt  #  this command work to Remove read permission for others
+{Example}
+-r-xrw-rwx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+chmod o-r file.txt
+-r-xrw--wx  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+
+chmod o-rwx file.txt  #  this command use to Remove all permissions for others
+{Example}
+chmod o-rwx file.txt
+-r-xrw----  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+
+chmod a-r file.txt  #  this command use to Remove read permission for everyone (user, group, and others)
+{Example}
+chmod a-r file.txt
+---x-w----  1 ubuntu ubuntu        0 Oct  7 12:42 file.txt
+
+
 
 
 
