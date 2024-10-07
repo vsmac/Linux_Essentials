@@ -13,18 +13,8 @@ tail -n 20 -f  /var/log/syslog   Monitor a File in Real-Time
 tail <file1> <file2>   Multiple Files You can use tail to display the last lines of multiple files
 # example: tail /var/log/syslog /var/log/auth.log
 
-tail -q file1.txt file2.txt:  Displays the last few lines of each file without displaying the file headers.
-# example:   file 1.txt              file 2.txt
-             Hello from file1        Hello from file2
-             Line 2 of file1         Line 2 of file2
-           
-tail -c [number] filename   Display the last 10 bytes of the file:
-# example: tail -c 10 example.txt
-
 
 # head command
-
-
 
 head <filename>   Display the frist 10 lines
 # example: head <filename>
@@ -32,19 +22,9 @@ head <filename>   Display the frist 10 lines
 head -n <number_of_lines> <filename>  Display a Specific Number of Lines
 # example: head -n 5 myfile.txt  Display the First 5 Lines 
 
-head -n 20 <filename> To display the first 20 lines 
-# example: head -n 20 /var/log/syslog
+head -n 20 -f /var/log/syslog   Monitor a File in Real-Time 
+# example: head -n 20 -f /var/log/syslog
 
 head <file1> <file2>   Multiple Files You can use tail to display the frist lines of multiple files
 # example: tail /var/log/syslog /var/log/auth.log
-
-head -q file1.txt file2.txt:  Displays the first few lines of both files without showing the file names (in quiet mode).
-# example: file 1.txt                  file 2.txt
-           Line 1 of file1             Line 1 of file2                              
-           Line 2 of file1             Line 2 of file2
-           Line 3 of file1             Line 3 of file2
-
-tail -c [number] filename
-
-head -c 10 example.txt:    Display the first 10 bytes of a file:
 
