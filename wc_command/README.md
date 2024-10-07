@@ -1,4 +1,4 @@
-# cp command pratice
+# wc command pratice
 what is wc command  #  The wc command use to counts the number of lines, words, characters, and bytes in a files
 
 wc  # this command use to count the number of line, words, characters,and bytes in a files
