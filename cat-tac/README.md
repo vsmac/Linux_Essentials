@@ -66,6 +66,10 @@ hello i am kaushal kumar gaur # press ctrl+d for save file
 kaushal@kaushal:~$ cat kaushal.txt 
 hello i am kaushal kumar gaur
 
+# To copy a file safely
+
+cat < filename > newfile  # This will read filename and output its content to newfile.
+
 # tac command practice 
 
 tac <filename> # To concatenate and print files in reverse
