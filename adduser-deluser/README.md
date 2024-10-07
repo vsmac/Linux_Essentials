@@ -35,3 +35,4 @@ kaushal@kaushal:~$ sudo deluser bhola
 Removing user `bhola' ...
 Warning: group `bhola' has no more members.
 Done.
+
