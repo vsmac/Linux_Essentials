@@ -23,7 +23,7 @@
 # example: "uname -s" Displays the kernel name.
 
  uname -v 
- output: 45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC
+ output: 45~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Sep 11 15:25:05 UTC 2
 # example: "uname -v" Displays the kernel version.
 
  uname -m  
@@ -39,5 +39,5 @@
 #  example: "uname -i" Displays the hardware platform (may not always be available)  
 
  uname -o 
- output:  x86_66
+ output: GNU/Linux
 # example: "uname -o" Displays the operating system.  
