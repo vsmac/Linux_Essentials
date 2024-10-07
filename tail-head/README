@@ -44,7 +44,10 @@ head -q file1.txt file2.txt:  Displays the first few lines of both files without
            Line 2 of file1             Line 2 of file2
            Line 3 of file1             Line 3 of file2
 
-tail -c [number] filename
+ head -c <Number>  <filename>: Display the first 10 bytes of a file:   
+# example:  head -c 10 example.txt:
 
-head -c 10 example.txt:    Display the first 10 bytes of a file:
+head -1 file | tail -1  Effectively, the entire command:
+# example: head -1 file | tail -1     First line of the file.
+        
 
