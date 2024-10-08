@@ -47,7 +47,7 @@ head -q file1.txt file2.txt:  Displays the first few lines of both files without
  head -c <Number>  <filename>: Display the first 10 bytes of a file:   
 # example:  head -c 10 example.txt:
 
-head -1 file | tail -1  Effectively, the entire command:
-# example: head -1 file | tail -1     First line of the file.
-        
+head -50 file | tail -5    # is a common command-line sequence used in Unix-like operating systems (like Linux) to extract a specific portion of a file.
+# example: head -50 filename |tail -5     
+ output:  46 ... 50                                    
 
