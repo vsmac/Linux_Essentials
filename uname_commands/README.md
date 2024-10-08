@@ -1,4 +1,4 @@
-# Qus. What is date command?
+# Qus. What is uname command?
 # Ans. The uname command in Linux prints system information such as the operating system name, kernel version, and more.
   
 1.uname        # used to  display only the kernel name
