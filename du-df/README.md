@@ -18,6 +18,10 @@ du -s <path>    #To obtain the disk usage summary for a directory.
 
 du -sh * <path>   # To display all files and directories in human-readable format.
 
+du -sh     # Total size used
+
+du -sh .[^.]*    #To display hiden file size
+
 
 ## df command
 

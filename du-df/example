@@ -54,6 +54,30 @@
 4.0K	Videos
 
 
+# kaushal@kaushal:~$ du -sh .[^.]*
+20K	.bash_history
+4.0K	.bash_logout
+4.0K	.bashrc
+54M	.cache
+131M	.config
+184K	.dotnet
+40M	.git
+4.0K	.gitconfig
+12K	.gnupg
+4.0K	.lesshst
+20M	.local
+8.0K	.mozilla
+76K	.pki
+4.0K	.profile
+4.0K	.python_history
+44K	.ssh
+0	.sudo_as_admin_successful
+18M	.thunderbird
+8.0K	.vim
+12K	.viminfo
+158M	.vscode
+
+
 
 # kaushal@kaushal:~$ df
 Filesystem     1K-blocks     Used Available Use% Mounted on
