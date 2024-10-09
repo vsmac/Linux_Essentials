@@ -1,0 +1,45 @@
+
+# What is adduser ? 
+command in Linux is used to add a new user to your current Linux machine. This command allows you to modify the configurations of the user which is to be created.
+
+## To create a new user
+
+adduser <username>  # to create a user account
+
+{Example}
+kaushal@kaushal:~$ sudo adduser bhola
+Adding user `bhola' ...
+Adding new group `bhola' (1002) ...
+Adding new user `bhola' (1002) with group `bhola' ...
+Creating home directory `/home/bhola' ...
+Copying files from `/etc/skel' ...
+New password: 
+Retype new password: 
+passwd: password updated successfully
+Changing the user information for bhola
+Enter the new value, or press ENTER for the default
+	Full Name []: 
+	Room Number []: 
+	Work Phone []: 
+	Home Phone []: 
+	Other []: 
+Is the information correct? [Y/n] y
+
+## To create a new user by second method
+
+sudo useradd -m <username>
+
+{Example}
+kaushal@kaushal:~$ sudo useradd -m ravi
+[sudo] password for kaushal:
+
+sudo passwd <username>
+
+{Example}
+kaushal@kaushal:~$ sudo passwd ravi
+New password: 
+BAD PASSWORD: The password is a palindrome
+Retype new password: 
+passwd: password updated successfully
+
+

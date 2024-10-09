@@ -1,0 +1,11 @@
+
+# What is deluser ?
+deluser command in Linux system is used to delete a user account and related files. This command basically modifies the system account files, deleting all the entries which refer to the username LOGIN.
+
+deluser <username>  # to delete a user account
+
+{Example}
+kaushal@kaushal:~$ sudo deluser bhola
+Removing user `bhola' ...
+Warning: group `bhola' has no more members.
+Done.
