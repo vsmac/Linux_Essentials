@@ -1,0 +1,152 @@
+
+## Examples ##
+
+# kaushal@kaushal:~$ du kaushu/kaushal.py 
+0	kaushu/kaushal.py
+
+
+# kaushal@kaushal:~$ du -h ~/kaushu/*
+8.0K	/home/kaushal/kaushu/adduser-deluser
+4.0K	/home/kaushal/kaushu/elk_installation
+0	/home/kaushal/kaushu/kaushal.py
+0	/home/kaushal/kaushu/my-firstprogram.py
+4.0K	/home/kaushal/kaushu/README.md
+
+
+# kaushal@kaushal:~$ du -a -h ~/kaushu/
+4.0K	/home/kaushal/kaushu/README.md
+4.0K	/home/kaushal/kaushu/adduser-deluser/README.md
+8.0K	/home/kaushal/kaushu/adduser-deluser
+0	/home/kaushal/kaushu/my-firstprogram.py
+0	/home/kaushal/kaushu/kaushal.py
+4.0K	/home/kaushal/kaushu/elk_installation
+20K	/home/kaushal/kaushu/
+
+
+# kaushal@kaushal:~$ du -c -h ~/kaushu/
+8.0K	/home/kaushal/kaushu/adduser-deluser
+20K	/home/kaushal/kaushu/
+20K	total
+
+
+# kaushal@kaushal:~$ du -s ~/kaushu/*
+8	/home/kaushal/kaushu/adduser-deluser
+4	/home/kaushal/kaushu/elk_installation
+0	/home/kaushal/kaushu/kaushal.py
+0	/home/kaushal/kaushu/my-firstprogram.py
+4	/home/kaushal/kaushu/README.md
+
+
+# kaushal@kaushal:~$ du -sh * 
+4.0K	Desktop
+4.0K	Documents
+2.0M	Downloads
+236K	elk_learn
+236K	github-action
+7.1M	kaushal
+4.0K	kaushal.txt
+20K	kaushu
+1.3M	linux
+4.0K	Music
+168K	Pictures
+484M	snap
+4.0K	Templates
+4.0K	Videos
+
+
+
+# kaushal@kaushal:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs             388316     1988    386328   1% /run
+/dev/sda3      479077064 17385732 437282040   4% /
+tmpfs            1941572    16128   1925444   1% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+efivarfs             128       21       103  18% /sys/firmware/efi/efivars
+/dev/sda2         524252     6228    518024   2% /boot/efi
+tmpfs             388312     1668    386644   1% /run/user/1000
+
+
+# kaushal@kaushal:~$ df -a
+df: /run/user/1000/doc: Operation not permitted
+Filesystem     1K-blocks     Used Available Use% Mounted on
+sysfs                  0        0         0    - /sys
+proc                   0        0         0    - /proc
+udev             1902680        0   1902680   0% /dev
+devpts                 0        0         0    - /dev/pts
+tmpfs             388316     1988    386328   1% /run
+/dev/sda3      479077064 17386312 437281460   4% /
+securityfs             0        0         0    - /sys/kernel/security
+tmpfs            1941572    26528   1915044   2% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+cgroup2                0        0         0    - /sys/fs/cgroup
+pstore                 0        0         0    - /sys/fs/pstore
+efivarfs             128       21       103  18% /sys/firmware/efi/efivars
+bpf                    0        0         0    - /sys/fs/bpf
+systemd-1              -        -         -    - /proc/sys/fs/binfmt_misc
+mqueue                 0        0         0    - /dev/mqueue
+tracefs                0        0         0    - /sys/kernel/tracing
+hugetlbfs              0        0         0    - /dev/hugepages
+debugfs                0        0         0    - /sys/kernel/debug
+fusectl                0        0         0    - /sys/fs/fuse/connections
+configfs               0        0         0    - /sys/kernel/config
+ramfs                  0        0         0    - /run/credentials/systemd-sysusers.service
+/dev/loop0           128      128         0 100% /snap/bare/5
+/dev/loop7        320384   320384         0 100% /snap/code/170
+/dev/loop4         76032    76032         0 100% /snap/core22/1621
+/dev/loop8        278272   278272         0 100% /snap/firefox/5014
+/dev/loop3         76160    76160         0 100% /snap/core22/1612
+/dev/loop2         65536    65536         0 100% /snap/core20/2379
+/dev/loop5        277888   277888         0 100% /snap/firefox/4955
+/dev/loop6        508928   508928         0 100% /snap/gnome-42-2204/141
+/dev/loop9        517248   517248         0 100% /snap/gnome-42-2204/176
+/dev/loop13        41472    41472         0 100% /snap/snapd/20671
+/dev/loop12        12544    12544         0 100% /snap/snap-store/1216
+/dev/loop15          512      512         0 100% /snap/snapd-desktop-integration/178
+/dev/loop14        39808    39808         0 100% /snap/snapd/21759
+/dev/loop16          640      640         0 100% /snap/snapd-desktop-integration/247
+/dev/sda3      479077064 17386312 437281460   4% /var/snap/firefox/common/host-hunspell
+/dev/loop11        13312    13312         0 100% /snap/snap-store/1113
+/dev/loop10        93952    93952         0 100% /snap/gtk-common-themes/1535
+/dev/sda2         524252     6228    518024   2% /boot/efi
+binfmt_misc            0        0         0    - /proc/sys/fs/binfmt_misc
+tmpfs             388316     1988    386328   1% /run/snapd/ns
+nsfs                   0        0         0    - /run/snapd/ns/snapd-desktop-integration.mnt
+tmpfs             388312     1668    386644   1% /run/user/1000
+/dev/loop17       320640   320640         0 100% /snap/code/171
+gvfsd-fuse             0        0         0    - /run/user/1000/gvfs
+nsfs                   0        0         0    - /run/snapd/ns/snap-store.mnt
+nsfs                   0        0         0    - /run/snapd/ns/firefox.mnt
+
+
+# kaushal@kaushal:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           380M  2.0M  378M   1% /run
+/dev/sda3       457G   17G  418G   4% /
+tmpfs           1.9G   21M  1.9G   2% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+efivarfs        128K   21K  103K  18% /sys/firmware/efi/efivars
+/dev/sda2       512M  6.1M  506M   2% /boot/efi
+tmpfs           380M  1.7M  378M   1% /run/user/1000
+
+
+# kaushal@kaushal:~$ df --total
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs             388316     1988    386328   1% /run
+/dev/sda3      479077064 17386936 437280836   4% /
+tmpfs            1941572    19888   1921684   2% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+efivarfs             128       21       103  18% /sys/firmware/efi/efivars
+/dev/sda2         524252     6228    518024   2% /boot/efi
+tmpfs             388312     1668    386644   1% /run/user/1000
+total          482324764 17416733 440498735   4% -
+
+
+# kaushal@kaushal:~$ df -T
+Filesystem     Type     1K-blocks     Used Available Use% Mounted on
+tmpfs          tmpfs       388316     1988    386328   1% /run
+/dev/sda3      ext4     479077064 17386940 437280832   4% /
+tmpfs          tmpfs      1941572    21456   1920116   2% /dev/shm
+tmpfs          tmpfs         5120        4      5116   1% /run/lock
+efivarfs       efivarfs       128       21       103  18% /sys/firmware/efi/efivars
+/dev/sda2      vfat        524252     6228    518024   2% /boot/efi
+tmpfs          tmpfs       388312     1668    386644   1% /run/user/1000
