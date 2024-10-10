@@ -1,0 +1,310 @@
+
+## Example ##
+
+# kaushal@kaushal:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffd3a525b40 /* 46 vars */) = 0
+brk(NULL)                               = 0x57a749bf6000
+arch_prctl(0x3001 /* ARCH_??? */, 0x7ffda5558960) = -1 EINVAL (Invalid argument)
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71035954d000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=56715, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 56715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x71035953f000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x71035950f000
+mprotect(0x710359515000, 139264, PROT_NONE) = 0
+mmap(0x710359515000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x710359515000
+mmap(0x71035952f000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x71035952f000
+mmap(0x710359537000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x710359537000
+mmap(0x710359539000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x710359539000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x710359200000
+mprotect(0x710359228000, 2023424, PROT_NONE) = 0
+mmap(0x710359228000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x710359228000
+mmap(0x7103593bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x7103593bd000
+mmap(0x710359416000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x710359416000
+mmap(0x71035941c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x71035941c000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x710359477000
+mmap(0x710359479000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x710359479000
+mmap(0x7103594e4000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x7103594e4000
+mmap(0x71035950c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x71035950c000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x71035953c000
+arch_prctl(ARCH_SET_FS, 0x71035953c800) = 0
+set_tid_address(0x71035953cad0)         = 8863
+set_robust_list(0x71035953cae0, 24)     = 0
+rseq(0x71035953d1a0, 0x20, 0, 0x53053053) = 0
+mprotect(0x710359416000, 16384, PROT_READ) = 0
+mprotect(0x71035950c000, 4096, PROT_READ) = 0
+mprotect(0x710359537000, 4096, PROT_READ) = 0
+mprotect(0x57a74863a000, 8192, PROT_READ) = 0
+mprotect(0x710359587000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x71035953f000, 56715)           = 0
+statfs("/sys/fs/selinux", 0x7ffda55589a0) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7ffda55589a0)      = -1 ENOENT (No such file or directory)
+getrandom("\x93\xeb\xf3\x22\xae\xa8\x35\x63", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x57a749bf6000
+brk(0x57a749c17000)                     = 0x57a749c17000
+openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 393
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0x710358c00000
+close(3)                                = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=38, ws_col=150, ws_xpixel=0, ws_ypixel=0}) = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+newfstatat(3, "", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(3, 0x57a749bfc9f0 /* 38 entries */, 32768) = 1200
+getdents64(3, 0x57a749bfc9f0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+write(1, "Desktop  Documents  Downloads  e"..., 147Desktop  Documents  Downloads  elk_learn  github-action  kaushal  kaushal.txt  kaushu  linux  Music  output.txt  Pictures  snap  Templates  Videos
+) = 147
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+
+
+# kaushal@kaushal:~$ strace -c ls
+Desktop  Documents  Downloads  elk_learn  github-action  kaushal  kaushal.txt  kaushu  linux  Music  output.txt  Pictures  snap  Templates  Videos
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 34.58    0.000341          18        18           mmap
+  9.84    0.000097          13         7           openat
+  9.74    0.000096          13         7           mprotect
+  6.09    0.000060           6         9           close
+  5.78    0.000057          11         5           read
+  5.27    0.000052          26         2           getdents64
+  4.67    0.000046          46         1           munmap
+  4.46    0.000044           5         8           newfstatat
+  3.75    0.000037           9         4           pread64
+  3.45    0.000034          34         1           set_tid_address
+  2.94    0.000029          14         2         2 statfs
+  2.13    0.000021           7         3           brk
+  1.42    0.000014           7         2           ioctl
+  1.22    0.000012          12         1           write
+  1.01    0.000010           5         2         2 access
+  0.81    0.000008           8         1           prlimit64
+  0.81    0.000008           8         1           getrandom
+  0.71    0.000007           3         2         1 arch_prctl
+  0.71    0.000007           7         1           rseq
+  0.61    0.000006           6         1           set_robust_list
+  0.00    0.000000           0         1           execve
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.000986          12        79         5 total
+
+
+# kaushal@kaushal:~$ strace -e trace=write ls
+write(1, "Desktop  Documents  Downloads  e"..., 147Desktop  Documents  Downloads  elk_learn  github-action  kaushal  kaushal.txt  kaushu  linux  Music  output.txt  Pictures  snap  Templates  Videos
+) = 147
++++ exited with 0 +++
+
+
+#  kaushal@kaushal:~$ strace -e trace=network nc -v -n 127.0.0.1 22
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+socket(AF_INET, SOCK_STREAM|SOCK_NONBLOCK, IPPROTO_TCP) = 3
+connect(3, {sa_family=AF_INET, sin_port=htons(22), sin_addr=inet_addr("127.0.0.1")}, 16) = -1 EINPROGRESS (Operation now in progress)
+getsockopt(3, SOL_SOCKET, SO_ERROR, [0], [4]) = 0
+Connection to 127.0.0.1 22 port [tcp/*] succeeded!
+SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+
+
+
+#   kaushal@kaushal:~$ strace -e trace=signal nc -v -n 127.0.0.1 22
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[PIPE], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x71507d442520}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+Connection to 127.0.0.1 22 port [tcp/*] succeeded!
+SSH-2.0-OpenSSH_8.9p1 Ubuntu-3ubuntu0.10
+
+
+#   kaushal@kaushal:~$ strace -r ls
+     0.000000 execve("/usr/bin/ls", ["ls"], 0x7ffc39af4ec8 /* 46 vars */) = 0
+     0.000957 brk(NULL)                 = 0x5f2187c80000
+     0.000115 arch_prctl(0x3001 /* ARCH_??? */, 0x7ffc37e68370) = -1 EINVAL (Invalid argument)
+     0.000273 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x751161e1d000
+     0.000109 access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+     0.000109 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+     0.000104 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=56715, ...}, AT_EMPTY_PATH) = 0
+     0.000098 mmap(NULL, 56715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x751161e0f000
+     0.000078 close(3)                  = 0
+     0.000125 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+     0.000096 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+     0.000082 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+     0.000086 mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x751161ddf000
+     0.000082 mprotect(0x751161de5000, 139264, PROT_NONE) = 0
+     0.000089 mmap(0x751161de5000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x751161de5000
+     0.000093 mmap(0x751161dff000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x751161dff000
+     0.000095 mmap(0x751161e07000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x751161e07000
+     0.000096 mmap(0x751161e09000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x751161e09000
+     0.000103 close(3)                  = 0
+     0.000083 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+     0.000086 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+     0.000078 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+     0.000075 pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+     0.000074 pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+     0.000113 newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+     0.000074 pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+     0.000072 mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x751161a00000
+     0.000072 mprotect(0x751161a28000, 2023424, PROT_NONE) = 0
+     0.000072 mmap(0x751161a28000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x751161a28000
+     0.000073 mmap(0x751161bbd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x751161bbd000
+     0.000079 mmap(0x751161c16000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x751161c16000
+     0.000086 mmap(0x751161c1c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x751161c1c000
+     0.000111 close(3)                  = 0
+     0.000072 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+     0.000078 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+     0.000868 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+     0.000129 mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x751161d47000
+     0.000092 mmap(0x751161d49000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x751161d49000
+     0.000087 mmap(0x751161db4000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x751161db4000
+     0.000073 mmap(0x751161ddc000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x751161ddc000
+     0.000096 close(3)                  = 0
+     0.000084 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x751161e0c000
+     0.000095 arch_prctl(ARCH_SET_FS, 0x751161e0c800) = 0
+     0.000051 set_tid_address(0x751161e0cad0) = 10427
+     0.000058 set_robust_list(0x751161e0cae0, 24) = 0
+     0.000056 rseq(0x751161e0d1a0, 0x20, 0, 0x53053053) = 0
+     0.000173 mprotect(0x751161c16000, 16384, PROT_READ) = 0
+     0.000088 mprotect(0x751161ddc000, 4096, PROT_READ) = 0
+     0.000127 mprotect(0x751161e07000, 4096, PROT_READ) = 0
+     0.000112 mprotect(0x5f2187266000, 8192, PROT_READ) = 0
+     0.000072 mprotect(0x751161e57000, 8192, PROT_READ) = 0
+     0.000092 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+     0.000100 munmap(0x751161e0f000, 56715) = 0
+     0.000127 statfs("/sys/fs/selinux", 0x7ffc37e683b0) = -1 ENOENT (No such file or directory)
+     0.000100 statfs("/selinux", 0x7ffc37e683b0) = -1 ENOENT (No such file or directory)
+     0.000125 getrandom("\x55\x5a\xc2\xbc\xa3\x4d\x0b\xf3", 8, GRND_NONBLOCK) = 8
+     0.000073 brk(NULL)                 = 0x5f2187c80000
+     0.000058 brk(0x5f2187ca1000)       = 0x5f2187ca1000
+     0.000109 openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+     0.000104 newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+     0.000081 read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 393
+     0.000109 read(3, "", 1024)         = 0
+     0.000060 close(3)                  = 0
+     0.000067 access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+     0.000132 openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+     0.000089 newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+     0.000107 mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0x751161400000
+     0.000109 close(3)                  = 0
+     0.000471 ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+     0.000101 ioctl(1, TIOCGWINSZ, {ws_row=38, ws_col=150, ws_xpixel=0, ws_ypixel=0}) = 0
+     0.000081 openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+     0.000093 newfstatat(3, "", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+     0.000090 getdents64(3, 0x5f2187c869f0 /* 38 entries */, 32768) = 1200
+     0.000155 getdents64(3, 0x5f2187c869f0 /* 0 entries */, 32768) = 0
+     0.000227 close(3)                  = 0
+     0.000099 newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+     0.000067 write(1, "Desktop  Documents  Downloads  e"..., 147Desktop  Documents  Downloads  elk_learn  github-action  kaushal  kaushal.txt  kaushu  linux  Music  output.txt  Pictures  snap  Templates  Videos
+) = 147
+     0.000048 close(1)                  = 0
+     0.000044 close(2)                  = 0
+     0.000069 exit_group(0)             = ?
+     0.000273 +++ exited with 0 +++
+
+
+#   kaushal@kaushal:~$ strace -i ls
+[00007fcb122eb08b] execve("/usr/bin/ls", ["ls"], 0x7ffffc027b48 /* 46 vars */) = 0
+[000073a4dd35ca8b] brk(NULL)            = 0x57ef511d3000
+[000073a4dd350cb4] arch_prctl(0x3001 /* ARCH_??? */, 0x7fff2f9b94c0) = -1 EINVAL (Invalid argument)
+[000073a4dd35dcb7] mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73a4dd376000
+[000073a4dd35d9ab] access("/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+[000073a4dd35db18] openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd35d8de] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=56715, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd35dcb7] mmap(NULL, 56715, PROT_READ, MAP_PRIVATE, 3, 0) = 0x73a4dd327000
+[000073a4dd35d9db] close(3)             = 0
+[000073a4dd35db18] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd35db68] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+[000073a4dd35d8de] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=166280, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd35dcb7] mmap(NULL, 177672, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73a4dd2f7000
+[000073a4dd35dd2b] mprotect(0x73a4dd2fd000, 139264, PROT_NONE) = 0
+[000073a4dd35dcb7] mmap(0x73a4dd2fd000, 106496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x73a4dd2fd000
+[000073a4dd35dcb7] mmap(0x73a4dd317000, 28672, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x20000) = 0x73a4dd317000
+[000073a4dd35dcb7] mmap(0x73a4dd31f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x27000) = 0x73a4dd31f000
+[000073a4dd35dcb7] mmap(0x73a4dd321000, 5640, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x73a4dd321000
+[000073a4dd35d9db] close(3)             = 0
+[000073a4dd35db18] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd35db68] read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\237\2\0\0\0\0\0"..., 832) = 832
+[000073a4dd35db9e] pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[000073a4dd35db9e] pread64(3, "\4\0\0\0 \0\0\0\5\0\0\0GNU\0\2\0\0\300\4\0\0\0\3\0\0\0\0\0\0\0"..., 48, 848) = 48
+[000073a4dd35db9e] pread64(3, "\4\0\0\0\24\0\0\0\3\0\0\0GNU\0I\17\357\204\3$\f\221\2039x\324\224\323\236S"..., 68, 896) = 68
+[000073a4dd35d8de] newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=2220400, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd35db9e] pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+[000073a4dd35dcb7] mmap(NULL, 2264656, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73a4dd000000
+[000073a4dd35dd2b] mprotect(0x73a4dd028000, 2023424, PROT_NONE) = 0
+[000073a4dd35dcb7] mmap(0x73a4dd028000, 1658880, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x73a4dd028000
+[000073a4dd35dcb7] mmap(0x73a4dd1bd000, 360448, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1bd000) = 0x73a4dd1bd000
+[000073a4dd35dcb7] mmap(0x73a4dd216000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x215000) = 0x73a4dd216000
+[000073a4dd35dcb7] mmap(0x73a4dd21c000, 52816, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x73a4dd21c000
+[000073a4dd35d9db] close(3)             = 0
+[000073a4dd35db18] openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd35db68] read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+[000073a4dd35d8de] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=613064, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd35dcb7] mmap(NULL, 615184, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x73a4dd25f000
+[000073a4dd35dcb7] mmap(0x73a4dd261000, 438272, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x73a4dd261000
+[000073a4dd35dcb7] mmap(0x73a4dd2cc000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6d000) = 0x73a4dd2cc000
+[000073a4dd35dcb7] mmap(0x73a4dd2f4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x94000) = 0x73a4dd2f4000
+[000073a4dd35d9db] close(3)             = 0
+[000073a4dd35dcb7] mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73a4dd373000
+[000073a4dd357dff] arch_prctl(ARCH_SET_FS, 0x73a4dd373800) = 0
+[000073a4dd34c13e] set_tid_address(0x73a4dd373ad0) = 10518
+[000073a4dd34c19a] set_robust_list(0x73a4dd373ae0, 24) = 0
+[000073a4dd34c1d1] rseq(0x73a4dd3741a0, 0x20, 0, 0x53053053) = 0
+[000073a4dd35dd2b] mprotect(0x73a4dd216000, 16384, PROT_READ) = 0
+[000073a4dd35dd2b] mprotect(0x73a4dd2f4000, 4096, PROT_READ) = 0
+[000073a4dd35dd2b] mprotect(0x73a4dd31f000, 4096, PROT_READ) = 0
+[000073a4dd35dd2b] mprotect(0x57ef50075000, 8192, PROT_READ) = 0
+[000073a4dd35dd2b] mprotect(0x73a4dd36f000, 8192, PROT_READ) = 0
+[000073a4dd11a2e4] prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+[000073a4dd35dcfb] munmap(0x73a4dd327000, 56715) = 0
+[000073a4dd11410b] statfs("/sys/fs/selinux", 0x7fff2f9b9500) = -1 ENOENT (No such file or directory)
+[000073a4dd11410b] statfs("/selinux", 0x7fff2f9b9500) = -1 ENOENT (No such file or directory)
+[000073a4dd046c87] getrandom("\x17\xe9\x28\xec\x36\xe7\xe8\x30", 8, GRND_NONBLOCK) = 8
+[000073a4dd11a82b] brk(NULL)            = 0x57ef511d3000
+[000073a4dd11a82b] brk(0x57ef511f4000)  = 0x57ef511f4000
+[000073a4dd11453b] openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd113d3e] newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd1147e2] read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 393
+[000073a4dd1147e2] read(3, "", 1024)    = 0
+[000073a4dd11986b] close(3)             = 0
+[000073a4dd11494b] access("/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+[000073a4dd119a1c] openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+[000073a4dd113d3e] newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd11ea27] mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0x73a4dca00000
+[000073a4dd11986b] close(3)             = 0
+[000073a4dd119f4a] ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+[000073a4dd11a94f] ioctl(1, TIOCGWINSZ, {ws_row=38, ws_col=150, ws_xpixel=0, ws_ypixel=0}) = 0
+[000073a4dd119a1c] openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+[000073a4dd113d3e] newfstatat(3, "", {st_mode=S_IFDIR|0750, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+[000073a4dd0e6647] getdents64(3, 0x57ef511d99f0 /* 38 entries */, 32768) = 1200
+[000073a4dd0e6647] getdents64(3, 0x57ef511d99f0 /* 0 entries */, 32768) = 0
+[000073a4dd11986b] close(3)             = 0
+[000073a4dd113d3e] newfstatat(1, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0), ...}, AT_EMPTY_PATH) = 0
+[000073a4dd114887] write(1, "Desktop  Documents  Downloads  e"..., 147Desktop  Documents  Downloads  elk_learn  github-action  kaushal  kaushal.txt  kaushu  linux  Music  output.txt  Pictures  snap  Templates  Videos
+) = 147
+[000073a4dd11986b] close(1)             = 0
+[000073a4dd11986b] close(2)             = 0
+[000073a4dd0eac31] exit_group(0)        = ?
+[????????????????] +++ exited with 0 +++
