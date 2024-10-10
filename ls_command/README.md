@@ -117,7 +117,7 @@ mkdir-rmdir			cal_command			ssh-basics			kvmtovirtu
 9.ls -r   #Used to reverse the order of the sort.
 {example}
 
-# without -r 
+     # without -r 
 
 Vishnu@Vishnus-MacBook-Pro linux %  ls   
 README.md			date_command			loc.sh				semantic_version_update.sh
@@ -125,7 +125,9 @@ aman1				grafana_installation		mkdir-rmdir			ssh-basics
 cal_command			history_command			mv				variables.sh
 cp				kvmtovirtu			nfs_setup			virtualization_migration
 
-# with -r 
+     
+    # with -r 
+
 Vishnu@Vishnus-MacBook-Pro linux %  ls -r
 virtualization_migration	nfs_setup			kvmtovirtu			cp
 variables.sh			mv				history_command			cal_command
