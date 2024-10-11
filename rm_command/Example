@@ -1,0 +1,56 @@
+rm  #  rm  #  this command use to delete  empty file and directory
+{Example}
+-rw-r--r--  1 ubuntu ubuntu        0 Oct 10 16:55 test
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm test
+(delete test named file)
+
+rm file1 file2 file3  #  this command use to Remove multiple files
+{Example}
+-rw-r--r--  1 ubuntu ubuntu       22 Oct 10 17:06 file.txt
+-rw-r--r--  1 ubuntu ubuntu       22 Oct 10 17:06 file1.txt
+-rw-r--r--  1 ubuntu ubuntu        0 Oct 10 17:04 file2.txt
+-rw-r--r--  1 ubuntu ubuntu        0 Oct 10 17:04 file3.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm file1.txt file2.txt file3.txt
+(delete multiples files)
+
+rm -d directory_name  #  this command use to Remove an empty directory
+{Example}
+drwxr-xr-x  2 ubuntu ubuntu     4096 Oct 10 16:55 test.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -d test.txt/
+(delete directory but this directory is empty)
+
+rm -r directory_name   #  this command work to Remove a directory and its contents (recursively)
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir test
+ubuntu@LAPTOP-UDS8CQ6E:~$ cd test
+ubuntu@LAPTOP-UDS8CQ6E:~/test$ vim raja
+ubuntu@LAPTOP-UDS8CQ6E:~/test$ cd
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -d test
+rm: cannot remove 'test': Directory not empty
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -r test
+(delete recursively directory)
+
+rm -i  #  this command use to Interactive removal (prompts for confirmation before removing each file)
+{Example}
+-rw-r--r--  1 ubuntu ubuntu       22 Oct 10 17:06 testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -i testing
+rm: remove regular file 'testing'? y
+
+rm -v  #  this command use to Verbose mode (shows what is being removed)
+{Example}
+-rw-r--r--  1 ubuntu ubuntu       22 Oct 10 17:06 file.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -v file.txt
+removed 'file.txt'
+
+rm -rf  #  this command use to  Force remove a directory and all its contents without confirmation
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ mkdir test.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ cd test.txt/
+ubuntu@LAPTOP-UDS8CQ6E:~/test.txt$ vim raja
+ubuntu@LAPTOP-UDS8CQ6E:~/test.txt$ seq 1 1000 > raja
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -rf test.txt
+
+rm -rf *  #  this command use to Delete all files in the current directory
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ rm -rf *
+(delete all files and directorys)
