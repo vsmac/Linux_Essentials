@@ -1,0 +1,524 @@
+
+## Examples ##
+
+# kaushal@kaushal:~$ last
+kaushal  tty2         tty2             Wed Oct  9 17:22   still logged in
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:20   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:15   still running
+kaushal  tty2         tty2             Wed Oct  9 14:00 - down   (01:26)
+reboot   system boot  6.8.0-45-generic Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         tty2             Tue Oct  8 17:07 - crash  (20:52)
+reboot   system boot  6.8.0-45-generic Tue Oct  8 13:24 - 15:27 (1+02:02)
+kaushal  tty2         tty2             Mon Oct  7 11:02 - down   (07:39)
+reboot   system boot  6.8.0-45-generic Mon Oct  7 11:01 - 18:42  (07:41)
+kaushal  tty2         tty2             Fri Oct  4 11:16 - crash (2+23:44)
+reboot   system boot  6.8.0-45-generic Fri Oct  4 11:14 - 18:42 (3+07:27)
+kaushal  tty2         tty2             Thu Oct  3 11:37 - crash  (23:37)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:36 - 18:42 (4+07:05)
+kaushal  tty2         tty2             Thu Oct  3 11:33 - crash  (00:02)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:32 - 18:42 (4+07:09)
+kaushal  pts/1        192.168.1.51     Wed Oct  2 12:54 - 15:08  (02:13)
+kaushal  tty2         tty2             Wed Oct  2 11:26 - down   (11:23)
+reboot   system boot  6.8.0-45-generic Wed Oct  2 11:24 - 22:49  (11:24)
+kaushal  tty2         tty2             Mon Sep 30 17:39 - crash (1+17:45)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 17:38 - 22:49 (2+05:10)
+kaushal  tty2         tty2             Mon Sep 30 16:51 - crash  (00:46)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 16:50 - 22:49 (2+05:58)
+kaushal  tty2         tty2             Mon Sep 30 10:36 - crash  (06:14)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 10:34 - 22:49 (2+12:14)
+kaushal  tty2         tty2             Sun Sep 29 11:36 - crash  (22:57)
+reboot   system boot  6.8.0-45-generic Sun Sep 29 11:35 - 22:49 (3+11:14)
+kaushal  tty2         tty2             Fri Sep 27 10:39 - crash (2+00:56)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:37 - 22:49 (5+12:11)
+kaushal  tty2         tty2             Fri Sep 27 10:09 - down   (00:28)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         tty2             Thu Sep 26 11:52 - crash  (22:15)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         tty2             Thu Sep 26 10:19 - crash  (01:31)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         tty2             Wed Sep 25 17:50 - crash  (16:26)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         tty2             Wed Sep 25 17:37 - crash  (00:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 13:17 - 10:37 (1+21:19)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         tty2             Wed Sep 25 10:32 - crash  (01:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 10:31 - 10:37 (2+00:06)
+kaushal  tty2         tty2             Tue Sep 24 10:37 - crash  (23:53)
+reboot   system boot  6.8.0-40-generic Tue Sep 24 10:36 - 10:37 (3+00:01)
+kaushal  tty2         tty2             Mon Sep 23 11:24 - crash  (23:11)
+reboot   system boot  6.8.0-40-generic Mon Sep 23 11:23 - 10:37 (3+23:13)
+kaushal  tty2         tty2             Sun Sep 22 12:31 - crash  (22:52)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 12:29 - 10:37 (4+22:07)
+kaushal  tty2         tty2             Sun Sep 22 09:41 - 12:28  (02:47)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:39 - 12:28  (02:49)
+kaushal  tty2         tty2             Sun Sep 22 09:06 - crash  (00:33)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:04 - 12:28  (03:24)
+kaushal  tty2         tty2             Sat Sep 21 12:45 - crash  (20:19)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 12:44 - 12:28  (23:44)
+kaushal  tty2         tty2             Sat Sep 21 10:37 - crash  (02:07)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:35 - 12:28 (1+01:53)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:30 - 12:28 (1+01:58)
+kaushal  tty2         tty2             Fri Sep 20 10:40 - crash  (23:50)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:39 - 12:28 (2+01:49)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:37 - 12:28 (2+01:51)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -7
+kaushal  tty2         tty2             Wed Oct  9 17:22   still logged in
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:20   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:15   still running
+kaushal  tty2         tty2             Wed Oct  9 14:00 - down   (01:26)
+reboot   system boot  6.8.0-45-generic Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         tty2             Tue Oct  8 17:07 - crash  (20:52)
+reboot   system boot  6.8.0-45-generic Tue Oct  8 13:24 - 15:27 (1+02:02)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -R
+kaushal  tty2         Wed Oct  9 17:22   still logged in
+reboot   system boot  Wed Oct  9 17:20   still running
+reboot   system boot  Wed Oct  9 17:15   still running
+kaushal  tty2         Wed Oct  9 14:00 - down   (01:26)
+reboot   system boot  Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         Tue Oct  8 17:07 - crash  (20:52)
+reboot   system boot  Tue Oct  8 13:24 - 15:27 (1+02:02)
+kaushal  tty2         Mon Oct  7 11:02 - down   (07:39)
+reboot   system boot  Mon Oct  7 11:01 - 18:42  (07:41)
+kaushal  tty2         Fri Oct  4 11:16 - crash (2+23:44)
+reboot   system boot  Fri Oct  4 11:14 - 18:42 (3+07:27)
+kaushal  tty2         Thu Oct  3 11:37 - crash  (23:37)
+reboot   system boot  Thu Oct  3 11:36 - 18:42 (4+07:05)
+kaushal  tty2         Thu Oct  3 11:33 - crash  (00:02)
+reboot   system boot  Thu Oct  3 11:32 - 18:42 (4+07:09)
+kaushal  pts/1        Wed Oct  2 12:54 - 15:08  (02:13)
+kaushal  tty2         Wed Oct  2 11:26 - down   (11:23)
+reboot   system boot  Wed Oct  2 11:24 - 22:49  (11:24)
+kaushal  tty2         Mon Sep 30 17:39 - crash (1+17:45)
+reboot   system boot  Mon Sep 30 17:38 - 22:49 (2+05:10)
+kaushal  tty2         Mon Sep 30 16:51 - crash  (00:46)
+reboot   system boot  Mon Sep 30 16:50 - 22:49 (2+05:58)
+kaushal  tty2         Mon Sep 30 10:36 - crash  (06:14)
+reboot   system boot  Mon Sep 30 10:34 - 22:49 (2+12:14)
+kaushal  tty2         Sun Sep 29 11:36 - crash  (22:57)
+reboot   system boot  Sun Sep 29 11:35 - 22:49 (3+11:14)
+kaushal  tty2         Fri Sep 27 10:39 - crash (2+00:56)
+reboot   system boot  Fri Sep 27 10:37 - 22:49 (5+12:11)
+kaushal  tty2         Fri Sep 27 10:09 - down   (00:28)
+reboot   system boot  Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         Thu Sep 26 11:52 - crash  (22:15)
+reboot   system boot  Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         Thu Sep 26 10:19 - crash  (01:31)
+reboot   system boot  Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         Wed Sep 25 17:50 - crash  (16:26)
+reboot   system boot  Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         Wed Sep 25 17:37 - crash  (00:12)
+reboot   system boot  Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  Wed Sep 25 13:17 - 10:37 (1+21:19)
+reboot   system boot  Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         Wed Sep 25 10:32 - crash  (01:12)
+reboot   system boot  Wed Sep 25 10:31 - 10:37 (2+00:06)
+kaushal  tty2         Tue Sep 24 10:37 - crash  (23:53)
+reboot   system boot  Tue Sep 24 10:36 - 10:37 (3+00:01)
+kaushal  tty2         Mon Sep 23 11:24 - crash  (23:11)
+reboot   system boot  Mon Sep 23 11:23 - 10:37 (3+23:13)
+kaushal  tty2         Sun Sep 22 12:31 - crash  (22:52)
+reboot   system boot  Sun Sep 22 12:29 - 10:37 (4+22:07)
+kaushal  tty2         Sun Sep 22 09:41 - 12:28  (02:47)
+reboot   system boot  Sun Sep 22 09:39 - 12:28  (02:49)
+kaushal  tty2         Sun Sep 22 09:06 - crash  (00:33)
+reboot   system boot  Sun Sep 22 09:04 - 12:28  (03:24)
+kaushal  tty2         Sat Sep 21 12:45 - crash  (20:19)
+reboot   system boot  Sat Sep 21 12:44 - 12:28  (23:44)
+kaushal  tty2         Sat Sep 21 10:37 - crash  (02:07)
+reboot   system boot  Sat Sep 21 10:35 - 12:28 (1+01:53)
+reboot   system boot  Sat Sep 21 10:30 - 12:28 (1+01:58)
+kaushal  tty2         Fri Sep 20 10:40 - crash  (23:50)
+reboot   system boot  Fri Sep 20 10:39 - 12:28 (2+01:49)
+reboot   system boot  Fri Sep 20 10:37 - 12:28 (2+01:51)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -F
+kaushal  tty2         tty2             Wed Oct  9 17:22:10 2024   still logged in
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:20:33 2024   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:15:38 2024   still running
+kaushal  tty2         tty2             Wed Oct  9 14:00:49 2024 - down                      (01:26)
+reboot   system boot  6.8.0-45-generic Wed Oct  9 13:59:31 2024 - Wed Oct  9 15:27:21 2024  (01:27)
+kaushal  tty2         tty2             Tue Oct  8 17:07:11 2024 - crash                     (20:52)
+reboot   system boot  6.8.0-45-generic Tue Oct  8 13:24:59 2024 - Wed Oct  9 15:27:21 2024 (1+02:02)
+kaushal  tty2         tty2             Mon Oct  7 11:02:13 2024 - down                      (07:39)
+reboot   system boot  6.8.0-45-generic Mon Oct  7 11:01:00 2024 - Mon Oct  7 18:42:08 2024  (07:41)
+kaushal  tty2         tty2             Fri Oct  4 11:16:09 2024 - crash                    (2+23:44)
+reboot   system boot  6.8.0-45-generic Fri Oct  4 11:14:39 2024 - Mon Oct  7 18:42:08 2024 (3+07:27)
+kaushal  tty2         tty2             Thu Oct  3 11:37:27 2024 - crash                     (23:37)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:36:21 2024 - Mon Oct  7 18:42:08 2024 (4+07:05)
+kaushal  tty2         tty2             Thu Oct  3 11:33:33 2024 - crash                     (00:02)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:32:22 2024 - Mon Oct  7 18:42:08 2024 (4+07:09)
+kaushal  pts/1        192.168.1.51     Wed Oct  2 12:54:54 2024 - Wed Oct  2 15:08:38 2024  (02:13)
+kaushal  tty2         tty2             Wed Oct  2 11:26:17 2024 - down                      (11:23)
+reboot   system boot  6.8.0-45-generic Wed Oct  2 11:24:59 2024 - Wed Oct  2 22:49:30 2024  (11:24)
+kaushal  tty2         tty2             Mon Sep 30 17:39:50 2024 - crash                    (1+17:45)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 17:38:43 2024 - Wed Oct  2 22:49:30 2024 (2+05:10)
+kaushal  tty2         tty2             Mon Sep 30 16:51:53 2024 - crash                     (00:46)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 16:50:36 2024 - Wed Oct  2 22:49:30 2024 (2+05:58)
+kaushal  tty2         tty2             Mon Sep 30 10:36:09 2024 - crash                     (06:14)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 10:34:35 2024 - Wed Oct  2 22:49:30 2024 (2+12:14)
+kaushal  tty2         tty2             Sun Sep 29 11:36:47 2024 - crash                     (22:57)
+reboot   system boot  6.8.0-45-generic Sun Sep 29 11:35:21 2024 - Wed Oct  2 22:49:30 2024 (3+11:14)
+kaushal  tty2         tty2             Fri Sep 27 10:39:02 2024 - crash                    (2+00:56)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:37:49 2024 - Wed Oct  2 22:49:30 2024 (5+12:11)
+kaushal  tty2         tty2             Fri Sep 27 10:09:05 2024 - down                      (00:28)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:07:53 2024 - Fri Sep 27 10:37:12 2024  (00:29)
+kaushal  tty2         tty2             Thu Sep 26 11:52:07 2024 - crash                     (22:15)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 11:50:59 2024 - Fri Sep 27 10:37:12 2024  (22:46)
+kaushal  tty2         tty2             Thu Sep 26 10:19:10 2024 - crash                     (01:31)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 10:17:35 2024 - Fri Sep 27 10:37:12 2024 (1+00:19)
+kaushal  tty2         tty2             Wed Sep 25 17:50:58 2024 - crash                     (16:26)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:49:49 2024 - Fri Sep 27 10:37:12 2024 (1+16:47)
+kaushal  tty2         tty2             Wed Sep 25 17:37:28 2024 - crash                     (00:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:36:01 2024 - Fri Sep 27 10:37:12 2024 (1+17:01)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 13:17:23 2024 - Fri Sep 27 10:37:12 2024 (1+21:19)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 11:44:24 2024 - Fri Sep 27 10:37:12 2024 (1+22:52)
+kaushal  tty2         tty2             Wed Sep 25 10:32:16 2024 - crash                     (01:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 10:31:06 2024 - Fri Sep 27 10:37:12 2024 (2+00:06)
+kaushal  tty2         tty2             Tue Sep 24 10:37:16 2024 - crash                     (23:53)
+reboot   system boot  6.8.0-40-generic Tue Sep 24 10:36:03 2024 - Fri Sep 27 10:37:12 2024 (3+00:01)
+kaushal  tty2         tty2             Mon Sep 23 11:24:35 2024 - crash                     (23:11)
+reboot   system boot  6.8.0-40-generic Mon Sep 23 11:23:23 2024 - Fri Sep 27 10:37:12 2024 (3+23:13)
+kaushal  tty2         tty2             Sun Sep 22 12:31:12 2024 - crash                     (22:52)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 12:29:45 2024 - Fri Sep 27 10:37:12 2024 (4+22:07)
+kaushal  tty2         tty2             Sun Sep 22 09:41:17 2024 - Sun Sep 22 12:28:49 2024  (02:47)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:39:45 2024 - Sun Sep 22 12:28:59 2024  (02:49)
+kaushal  tty2         tty2             Sun Sep 22 09:06:21 2024 - crash                     (00:33)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:04:58 2024 - Sun Sep 22 12:28:59 2024  (03:24)
+kaushal  tty2         tty2             Sat Sep 21 12:45:40 2024 - crash                     (20:19)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 12:44:07 2024 - Sun Sep 22 12:28:59 2024  (23:44)
+kaushal  tty2         tty2             Sat Sep 21 10:37:04 2024 - crash                     (02:07)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:35:49 2024 - Sun Sep 22 12:28:59 2024 (1+01:53)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:30:20 2024 - Sun Sep 22 12:28:59 2024 (1+01:58)
+kaushal  tty2         tty2             Fri Sep 20 10:40:19 2024 - crash                     (23:50)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:39:11 2024 - Sun Sep 22 12:28:59 2024 (2+01:49)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:37:51 2024 - Sun Sep 22 12:28:59 2024 (2+01:51)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -a
+kaushal  tty2         Wed Oct  9 17:22   still logged in    tty2
+reboot   system boot  Wed Oct  9 17:20   still running      6.8.0-45-generic
+reboot   system boot  Wed Oct  9 17:15   still running      6.8.0-45-generic
+kaushal  tty2         Wed Oct  9 14:00 - down   (01:26)     tty2
+reboot   system boot  Wed Oct  9 13:59 - 15:27  (01:27)     6.8.0-45-generic
+kaushal  tty2         Tue Oct  8 17:07 - crash  (20:52)     tty2
+reboot   system boot  Tue Oct  8 13:24 - 15:27 (1+02:02)    6.8.0-45-generic
+kaushal  tty2         Mon Oct  7 11:02 - down   (07:39)     tty2
+reboot   system boot  Mon Oct  7 11:01 - 18:42  (07:41)     6.8.0-45-generic
+kaushal  tty2         Fri Oct  4 11:16 - crash (2+23:44)    tty2
+reboot   system boot  Fri Oct  4 11:14 - 18:42 (3+07:27)    6.8.0-45-generic
+kaushal  tty2         Thu Oct  3 11:37 - crash  (23:37)     tty2
+reboot   system boot  Thu Oct  3 11:36 - 18:42 (4+07:05)    6.8.0-45-generic
+kaushal  tty2         Thu Oct  3 11:33 - crash  (00:02)     tty2
+reboot   system boot  Thu Oct  3 11:32 - 18:42 (4+07:09)    6.8.0-45-generic
+kaushal  pts/1        Wed Oct  2 12:54 - 15:08  (02:13)     192.168.1.51
+kaushal  tty2         Wed Oct  2 11:26 - down   (11:23)     tty2
+reboot   system boot  Wed Oct  2 11:24 - 22:49  (11:24)     6.8.0-45-generic
+kaushal  tty2         Mon Sep 30 17:39 - crash (1+17:45)    tty2
+reboot   system boot  Mon Sep 30 17:38 - 22:49 (2+05:10)    6.8.0-45-generic
+kaushal  tty2         Mon Sep 30 16:51 - crash  (00:46)     tty2
+reboot   system boot  Mon Sep 30 16:50 - 22:49 (2+05:58)    6.8.0-45-generic
+kaushal  tty2         Mon Sep 30 10:36 - crash  (06:14)     tty2
+reboot   system boot  Mon Sep 30 10:34 - 22:49 (2+12:14)    6.8.0-45-generic
+kaushal  tty2         Sun Sep 29 11:36 - crash  (22:57)     tty2
+reboot   system boot  Sun Sep 29 11:35 - 22:49 (3+11:14)    6.8.0-45-generic
+kaushal  tty2         Fri Sep 27 10:39 - crash (2+00:56)    tty2
+reboot   system boot  Fri Sep 27 10:37 - 22:49 (5+12:11)    6.8.0-45-generic
+kaushal  tty2         Fri Sep 27 10:09 - down   (00:28)     tty2
+reboot   system boot  Fri Sep 27 10:07 - 10:37  (00:29)     6.8.0-45-generic
+kaushal  tty2         Thu Sep 26 11:52 - crash  (22:15)     tty2
+reboot   system boot  Thu Sep 26 11:50 - 10:37  (22:46)     6.8.0-45-generic
+kaushal  tty2         Thu Sep 26 10:19 - crash  (01:31)     tty2
+reboot   system boot  Thu Sep 26 10:17 - 10:37 (1+00:19)    6.8.0-45-generic
+kaushal  tty2         Wed Sep 25 17:50 - crash  (16:26)     tty2
+reboot   system boot  Wed Sep 25 17:49 - 10:37 (1+16:47)    6.8.0-45-generic
+kaushal  tty2         Wed Sep 25 17:37 - crash  (00:12)     tty2
+reboot   system boot  Wed Sep 25 17:36 - 10:37 (1+17:01)    6.8.0-45-generic
+reboot   system boot  Wed Sep 25 13:17 - 10:37 (1+21:19)    6.8.0-45-generic
+reboot   system boot  Wed Sep 25 11:44 - 10:37 (1+22:52)    6.8.0-45-generic
+kaushal  tty2         Wed Sep 25 10:32 - crash  (01:12)     tty2
+reboot   system boot  Wed Sep 25 10:31 - 10:37 (2+00:06)    6.8.0-45-generic
+kaushal  tty2         Tue Sep 24 10:37 - crash  (23:53)     tty2
+reboot   system boot  Tue Sep 24 10:36 - 10:37 (3+00:01)    6.8.0-40-generic
+kaushal  tty2         Mon Sep 23 11:24 - crash  (23:11)     tty2
+reboot   system boot  Mon Sep 23 11:23 - 10:37 (3+23:13)    6.8.0-40-generic
+kaushal  tty2         Sun Sep 22 12:31 - crash  (22:52)     tty2
+reboot   system boot  Sun Sep 22 12:29 - 10:37 (4+22:07)    6.8.0-40-generic
+kaushal  tty2         Sun Sep 22 09:41 - 12:28  (02:47)     tty2
+reboot   system boot  Sun Sep 22 09:39 - 12:28  (02:49)     6.8.0-40-generic
+kaushal  tty2         Sun Sep 22 09:06 - crash  (00:33)     tty2
+reboot   system boot  Sun Sep 22 09:04 - 12:28  (03:24)     6.8.0-40-generic
+kaushal  tty2         Sat Sep 21 12:45 - crash  (20:19)     tty2
+reboot   system boot  Sat Sep 21 12:44 - 12:28  (23:44)     6.8.0-40-generic
+kaushal  tty2         Sat Sep 21 10:37 - crash  (02:07)     tty2
+reboot   system boot  Sat Sep 21 10:35 - 12:28 (1+01:53)    6.8.0-40-generic
+reboot   system boot  Sat Sep 21 10:30 - 12:28 (1+01:58)    6.8.0-40-generic
+kaushal  tty2         Fri Sep 20 10:40 - crash  (23:50)     tty2
+reboot   system boot  Fri Sep 20 10:39 - 12:28 (2+01:49)    6.8.0-40-generic
+reboot   system boot  Fri Sep 20 10:37 - 12:28 (2+01:51)    6.8.0-40-generic
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -d
+kaushal  tty2         0.0.0.0          Wed Oct  9 17:22   still logged in
+reboot   system boot  0.0.0.0          Wed Oct  9 17:20   still running
+reboot   system boot  0.0.0.0          Wed Oct  9 17:15   still running
+kaushal  tty2         0.0.0.0          Wed Oct  9 14:00 - down   (01:26)
+reboot   system boot  0.0.0.0          Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         0.0.0.0          Tue Oct  8 17:07 - crash  (20:52)
+reboot   system boot  0.0.0.0          Tue Oct  8 13:24 - 15:27 (1+02:02)
+kaushal  tty2         0.0.0.0          Mon Oct  7 11:02 - down   (07:39)
+reboot   system boot  0.0.0.0          Mon Oct  7 11:01 - 18:42  (07:41)
+kaushal  tty2         0.0.0.0          Fri Oct  4 11:16 - crash (2+23:44)
+reboot   system boot  0.0.0.0          Fri Oct  4 11:14 - 18:42 (3+07:27)
+kaushal  tty2         0.0.0.0          Thu Oct  3 11:37 - crash  (23:37)
+reboot   system boot  0.0.0.0          Thu Oct  3 11:36 - 18:42 (4+07:05)
+kaushal  tty2         0.0.0.0          Thu Oct  3 11:33 - crash  (00:02)
+reboot   system boot  0.0.0.0          Thu Oct  3 11:32 - 18:42 (4+07:09)
+kaushal  pts/1        192.168.1.51     Wed Oct  2 12:54 - 15:08  (02:13)
+kaushal  tty2         0.0.0.0          Wed Oct  2 11:26 - down   (11:23)
+reboot   system boot  0.0.0.0          Wed Oct  2 11:24 - 22:49  (11:24)
+kaushal  tty2         0.0.0.0          Mon Sep 30 17:39 - crash (1+17:45)
+reboot   system boot  0.0.0.0          Mon Sep 30 17:38 - 22:49 (2+05:10)
+kaushal  tty2         0.0.0.0          Mon Sep 30 16:51 - crash  (00:46)
+reboot   system boot  0.0.0.0          Mon Sep 30 16:50 - 22:49 (2+05:58)
+kaushal  tty2         0.0.0.0          Mon Sep 30 10:36 - crash  (06:14)
+reboot   system boot  0.0.0.0          Mon Sep 30 10:34 - 22:49 (2+12:14)
+kaushal  tty2         0.0.0.0          Sun Sep 29 11:36 - crash  (22:57)
+reboot   system boot  0.0.0.0          Sun Sep 29 11:35 - 22:49 (3+11:14)
+kaushal  tty2         0.0.0.0          Fri Sep 27 10:39 - crash (2+00:56)
+reboot   system boot  0.0.0.0          Fri Sep 27 10:37 - 22:49 (5+12:11)
+kaushal  tty2         0.0.0.0          Fri Sep 27 10:09 - down   (00:28)
+reboot   system boot  0.0.0.0          Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         0.0.0.0          Thu Sep 26 11:52 - crash  (22:15)
+reboot   system boot  0.0.0.0          Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         0.0.0.0          Thu Sep 26 10:19 - crash  (01:31)
+reboot   system boot  0.0.0.0          Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         0.0.0.0          Wed Sep 25 17:50 - crash  (16:26)
+reboot   system boot  0.0.0.0          Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         0.0.0.0          Wed Sep 25 17:37 - crash  (00:12)
+reboot   system boot  0.0.0.0          Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  0.0.0.0          Wed Sep 25 13:17 - 10:37 (1+21:19)
+reboot   system boot  0.0.0.0          Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         0.0.0.0          Wed Sep 25 10:32 - crash  (01:12)
+reboot   system boot  0.0.0.0          Wed Sep 25 10:31 - 10:37 (2+00:06)
+kaushal  tty2         0.0.0.0          Tue Sep 24 10:37 - crash  (23:53)
+reboot   system boot  0.0.0.0          Tue Sep 24 10:36 - 10:37 (3+00:01)
+kaushal  tty2         0.0.0.0          Mon Sep 23 11:24 - crash  (23:11)
+reboot   system boot  0.0.0.0          Mon Sep 23 11:23 - 10:37 (3+23:13)
+kaushal  tty2         0.0.0.0          Sun Sep 22 12:31 - crash  (22:52)
+reboot   system boot  0.0.0.0          Sun Sep 22 12:29 - 10:37 (4+22:07)
+kaushal  tty2         0.0.0.0          Sun Sep 22 09:41 - 12:28  (02:47)
+reboot   system boot  0.0.0.0          Sun Sep 22 09:39 - 12:28  (02:49)
+kaushal  tty2         0.0.0.0          Sun Sep 22 09:06 - crash  (00:33)
+reboot   system boot  0.0.0.0          Sun Sep 22 09:04 - 12:28  (03:24)
+kaushal  tty2         0.0.0.0          Sat Sep 21 12:45 - crash  (20:19)
+reboot   system boot  0.0.0.0          Sat Sep 21 12:44 - 12:28  (23:44)
+kaushal  tty2         0.0.0.0          Sat Sep 21 10:37 - crash  (02:07)
+reboot   system boot  0.0.0.0          Sat Sep 21 10:35 - 12:28 (1+01:53)
+reboot   system boot  0.0.0.0          Sat Sep 21 10:30 - 12:28 (1+01:58)
+kaushal  tty2         0.0.0.0          Fri Sep 20 10:40 - crash  (23:50)
+reboot   system boot  0.0.0.0          Fri Sep 20 10:39 - 12:28 (2+01:49)
+reboot   system boot  0.0.0.0          Fri Sep 20 10:37 - 12:28 (2+01:51)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -x
+kaushal  tty2         tty2             Wed Oct  9 17:22   still logged in
+runlevel (to lvl 5)   6.8.0-45-generic Wed Oct  9 17:22   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:20   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:15   still running
+shutdown system down  6.8.0-45-generic Wed Oct  9 15:27 - 17:15  (01:48)
+kaushal  tty2         tty2             Wed Oct  9 14:00 - down   (01:26)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Oct  9 14:00 - 15:27  (01:26)
+reboot   system boot  6.8.0-45-generic Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         tty2             Tue Oct  8 17:07 - crash  (20:52)
+runlevel (to lvl 5)   6.8.0-45-generic Tue Oct  8 13:26 - 14:00 (1+00:34)
+reboot   system boot  6.8.0-45-generic Tue Oct  8 13:24 - 15:27 (1+02:02)
+shutdown system down  6.8.0-45-generic Mon Oct  7 18:42 - 13:24  (18:42)
+kaushal  tty2         tty2             Mon Oct  7 11:02 - down   (07:39)
+runlevel (to lvl 5)   6.8.0-45-generic Mon Oct  7 11:02 - 18:42  (07:40)
+reboot   system boot  6.8.0-45-generic Mon Oct  7 11:01 - 18:42  (07:41)
+kaushal  tty2         tty2             Fri Oct  4 11:16 - crash (2+23:44)
+runlevel (to lvl 5)   6.8.0-45-generic Fri Oct  4 11:15 - 11:02 (2+23:46)
+reboot   system boot  6.8.0-45-generic Fri Oct  4 11:14 - 18:42 (3+07:27)
+kaushal  tty2         tty2             Thu Oct  3 11:37 - crash  (23:37)
+runlevel (to lvl 5)   6.8.0-45-generic Thu Oct  3 11:37 - 11:15  (23:38)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:36 - 18:42 (4+07:05)
+kaushal  tty2         tty2             Thu Oct  3 11:33 - crash  (00:02)
+runlevel (to lvl 5)   6.8.0-45-generic Thu Oct  3 11:33 - 11:37  (00:03)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:32 - 18:42 (4+07:09)
+shutdown system down  6.8.0-45-generic Wed Oct  2 22:49 - 11:32  (12:42)
+kaushal  pts/1        192.168.1.51     Wed Oct  2 12:54 - 15:08  (02:13)
+kaushal  tty2         tty2             Wed Oct  2 11:26 - down   (11:23)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Oct  2 11:26 - 22:49  (11:23)
+reboot   system boot  6.8.0-45-generic Wed Oct  2 11:24 - 22:49  (11:24)
+kaushal  tty2         tty2             Mon Sep 30 17:39 - crash (1+17:45)
+runlevel (to lvl 5)   6.8.0-45-generic Mon Sep 30 17:39 - 11:26 (1+17:46)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 17:38 - 22:49 (2+05:10)
+kaushal  tty2         tty2             Mon Sep 30 16:51 - crash  (00:46)
+runlevel (to lvl 5)   6.8.0-45-generic Mon Sep 30 16:51 - 17:39  (00:48)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 16:50 - 22:49 (2+05:58)
+kaushal  tty2         tty2             Mon Sep 30 10:36 - crash  (06:14)
+runlevel (to lvl 5)   6.8.0-45-generic Mon Sep 30 10:35 - 16:51  (06:16)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 10:34 - 22:49 (2+12:14)
+kaushal  tty2         tty2             Sun Sep 29 11:36 - crash  (22:57)
+runlevel (to lvl 5)   6.8.0-45-generic Sun Sep 29 11:36 - 10:35  (22:59)
+reboot   system boot  6.8.0-45-generic Sun Sep 29 11:35 - 22:49 (3+11:14)
+kaushal  tty2         tty2             Fri Sep 27 10:39 - crash (2+00:56)
+runlevel (to lvl 5)   6.8.0-45-generic Fri Sep 27 10:38 - 11:36 (2+00:57)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:37 - 22:49 (5+12:11)
+shutdown system down  6.8.0-45-generic Fri Sep 27 10:37 - 10:37  (00:00)
+kaushal  tty2         tty2             Fri Sep 27 10:09 - down   (00:28)
+runlevel (to lvl 5)   6.8.0-45-generic Fri Sep 27 10:08 - 10:37  (00:28)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         tty2             Thu Sep 26 11:52 - crash  (22:15)
+runlevel (to lvl 5)   6.8.0-45-generic Thu Sep 26 11:52 - 10:08  (22:16)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         tty2             Thu Sep 26 10:19 - crash  (01:31)
+runlevel (to lvl 5)   6.8.0-45-generic Thu Sep 26 10:18 - 11:52  (01:33)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         tty2             Wed Sep 25 17:50 - crash  (16:26)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Sep 25 17:50 - 10:18  (16:28)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         tty2             Wed Sep 25 17:37 - crash  (00:12)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Sep 25 17:37 - 17:50  (00:13)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 13:17 - 10:37 (1+21:19)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Sep 25 11:45 - 17:37  (05:51)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         tty2             Wed Sep 25 10:32 - crash  (01:12)
+runlevel (to lvl 5)   6.8.0-45-generic Wed Sep 25 10:32 - 11:45  (01:13)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 10:31 - 10:37 (2+00:06)
+kaushal  tty2         tty2             Tue Sep 24 10:37 - crash  (23:53)
+runlevel (to lvl 5)   6.8.0-40-generic Tue Sep 24 10:37 - 10:32  (23:54)
+reboot   system boot  6.8.0-40-generic Tue Sep 24 10:36 - 10:37 (3+00:01)
+kaushal  tty2         tty2             Mon Sep 23 11:24 - crash  (23:11)
+runlevel (to lvl 5)   6.8.0-40-generic Mon Sep 23 11:24 - 10:37  (23:12)
+reboot   system boot  6.8.0-40-generic Mon Sep 23 11:23 - 10:37 (3+23:13)
+kaushal  tty2         tty2             Sun Sep 22 12:31 - crash  (22:52)
+runlevel (to lvl 5)   6.8.0-40-generic Sun Sep 22 12:30 - 11:24  (22:53)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 12:29 - 10:37 (4+22:07)
+shutdown system down  6.8.0-40-generic Sun Sep 22 12:28 - 12:29  (00:00)
+kaushal  tty2         tty2             Sun Sep 22 09:41 - 12:28  (02:47)
+runlevel (to lvl 5)   6.8.0-40-generic Sun Sep 22 09:41 - 12:28  (02:47)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:39 - 12:28  (02:49)
+kaushal  tty2         tty2             Sun Sep 22 09:06 - crash  (00:33)
+runlevel (to lvl 5)   6.8.0-40-generic Sun Sep 22 09:06 - 09:41  (00:34)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:04 - 12:28  (03:24)
+kaushal  tty2         tty2             Sat Sep 21 12:45 - crash  (20:19)
+runlevel (to lvl 5)   6.8.0-40-generic Sat Sep 21 12:45 - 09:06  (20:20)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 12:44 - 12:28  (23:44)
+kaushal  tty2         tty2             Sat Sep 21 10:37 - crash  (02:07)
+runlevel (to lvl 5)   6.8.0-40-generic Sat Sep 21 10:36 - 12:45  (02:08)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:35 - 12:28 (1+01:53)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:30 - 12:28 (1+01:58)
+kaushal  tty2         tty2             Fri Sep 20 10:40 - crash  (23:50)
+runlevel (to lvl 5)   6.8.0-40-generic Fri Sep 20 10:40 - 10:36  (23:56)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:39 - 12:28 (2+01:49)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:37 - 12:28 (2+01:51
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last -w
+kaushal  tty2         tty2             Wed Oct  9 17:22   still logged in
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:20   still running
+reboot   system boot  6.8.0-45-generic Wed Oct  9 17:15   still running
+kaushal  tty2         tty2             Wed Oct  9 14:00 - down   (01:26)
+reboot   system boot  6.8.0-45-generic Wed Oct  9 13:59 - 15:27  (01:27)
+kaushal  tty2         tty2             Tue Oct  8 17:07 - crash  (20:52)
+reboot   system boot  6.8.0-45-generic Tue Oct  8 13:24 - 15:27 (1+02:02)
+kaushal  tty2         tty2             Mon Oct  7 11:02 - down   (07:39)
+reboot   system boot  6.8.0-45-generic Mon Oct  7 11:01 - 18:42  (07:41)
+kaushal  tty2         tty2             Fri Oct  4 11:16 - crash (2+23:44)
+reboot   system boot  6.8.0-45-generic Fri Oct  4 11:14 - 18:42 (3+07:27)
+kaushal  tty2         tty2             Thu Oct  3 11:37 - crash  (23:37)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:36 - 18:42 (4+07:05)
+kaushal  tty2         tty2             Thu Oct  3 11:33 - crash  (00:02)
+reboot   system boot  6.8.0-45-generic Thu Oct  3 11:32 - 18:42 (4+07:09)
+kaushal  pts/1        192.168.1.51     Wed Oct  2 12:54 - 15:08  (02:13)
+kaushal  tty2         tty2             Wed Oct  2 11:26 - down   (11:23)
+reboot   system boot  6.8.0-45-generic Wed Oct  2 11:24 - 22:49  (11:24)
+kaushal  tty2         tty2             Mon Sep 30 17:39 - crash (1+17:45)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 17:38 - 22:49 (2+05:10)
+kaushal  tty2         tty2             Mon Sep 30 16:51 - crash  (00:46)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 16:50 - 22:49 (2+05:58)
+kaushal  tty2         tty2             Mon Sep 30 10:36 - crash  (06:14)
+reboot   system boot  6.8.0-45-generic Mon Sep 30 10:34 - 22:49 (2+12:14)
+kaushal  tty2         tty2             Sun Sep 29 11:36 - crash  (22:57)
+reboot   system boot  6.8.0-45-generic Sun Sep 29 11:35 - 22:49 (3+11:14)
+kaushal  tty2         tty2             Fri Sep 27 10:39 - crash (2+00:56)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:37 - 22:49 (5+12:11)
+kaushal  tty2         tty2             Fri Sep 27 10:09 - down   (00:28)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         tty2             Thu Sep 26 11:52 - crash  (22:15)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         tty2             Thu Sep 26 10:19 - crash  (01:31)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         tty2             Wed Sep 25 17:50 - crash  (16:26)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         tty2             Wed Sep 25 17:37 - crash  (00:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 13:17 - 10:37 (1+21:19)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         tty2             Wed Sep 25 10:32 - crash  (01:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 10:31 - 10:37 (2+00:06)
+kaushal  tty2         tty2             Tue Sep 24 10:37 - crash  (23:53)
+reboot   system boot  6.8.0-40-generic Tue Sep 24 10:36 - 10:37 (3+00:01)
+kaushal  tty2         tty2             Mon Sep 23 11:24 - crash  (23:11)
+reboot   system boot  6.8.0-40-generic Mon Sep 23 11:23 - 10:37 (3+23:13)
+kaushal  tty2         tty2             Sun Sep 22 12:31 - crash  (22:52)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 12:29 - 10:37 (4+22:07)
+kaushal  tty2         tty2             Sun Sep 22 09:41 - 12:28  (02:47)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:39 - 12:28  (02:49)
+kaushal  tty2         tty2             Sun Sep 22 09:06 - crash  (00:33)
+reboot   system boot  6.8.0-40-generic Sun Sep 22 09:04 - 12:28  (03:24)
+kaushal  tty2         tty2             Sat Sep 21 12:45 - crash  (20:19)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 12:44 - 12:28  (23:44)
+kaushal  tty2         tty2             Sat Sep 21 10:37 - crash  (02:07)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:35 - 12:28 (1+01:53)
+reboot   system boot  6.8.0-40-generic Sat Sep 21 10:30 - 12:28 (1+01:58)
+kaushal  tty2         tty2             Fri Sep 20 10:40 - crash  (23:50)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:39 - 12:28 (2+01:49)
+reboot   system boot  6.8.0-40-generic Fri Sep 20 10:37 - 12:28 (2+01:51)
+
+wtmp begins Fri Sep 20 10:37:34 2024
+
+
+# kaushal@kaushal:~$ last --since 2024-09-25 --until 2024-09-30
+kaushal  tty2         tty2             Sun Sep 29 11:36    gone - no logout
+reboot   system boot  6.8.0-45-generic Sun Sep 29 11:35   still running
+kaushal  tty2         tty2             Fri Sep 27 10:39 - crash (2+00:56)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:37   still running
+kaushal  tty2         tty2             Fri Sep 27 10:09 - down   (00:28)
+reboot   system boot  6.8.0-45-generic Fri Sep 27 10:07 - 10:37  (00:29)
+kaushal  tty2         tty2             Thu Sep 26 11:52 - crash  (22:15)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 11:50 - 10:37  (22:46)
+kaushal  tty2         tty2             Thu Sep 26 10:19 - crash  (01:31)
+reboot   system boot  6.8.0-45-generic Thu Sep 26 10:17 - 10:37 (1+00:19)
+kaushal  tty2         tty2             Wed Sep 25 17:50 - crash  (16:26)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:49 - 10:37 (1+16:47)
+kaushal  tty2         tty2             Wed Sep 25 17:37 - crash  (00:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 17:36 - 10:37 (1+17:01)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 13:17 - 10:37 (1+21:19)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 11:44 - 10:37 (1+22:52)
+kaushal  tty2         tty2             Wed Sep 25 10:32 - crash  (01:12)
+reboot   system boot  6.8.0-45-generic Wed Sep 25 10:31 - 10:37 (2+00:06)
+
+wtmp begins Fri Sep 20 10:37:34 2024
