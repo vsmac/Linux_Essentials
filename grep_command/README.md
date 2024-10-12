@@ -17,6 +17,8 @@ grep -c  #  this command use to  count the number of lines that match a specifie
 
 grep -E  #  this command use to serach for  multiple pattern in a file
 
+grep -x   #  this command use to searches for lines in a file that match the specified pattern exactly
+
 grep -o  #  this command use to display only the matching part of the lines, rather than the entire line.
 
 grep -B 1 "petten" filename   #   this command use to  search for the term "petten" in a file and display the matching line along with the line immediately before it
