@@ -31,7 +31,6 @@ i like playing cricket
 
 grep -w  #  this command use to searches for lines that contain whole words that match the specified pattern
 {Example}
-grep -w  #  this command use to searches for lines that contain whole words that match the specified pattern
 ubuntu@LAPTOP-UDS8CQ6E:~$ grep -w am testing
 -rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
 i am raja gaur
@@ -82,7 +81,7 @@ ubuntu@LAPTOP-UDS8CQ6E:~$ grep -n am testing
 9:i am also enjoy playing crickrt and listing music
 10:we are 10 members in my family including me
 
-grep -n  #  this command  use to displays the matching lines along with their line numbers from a specified file
+grep -x   #  this command use to searches for lines in a file that match the specified pattern exactly, 
 {Example}
 ubuntu@LAPTOP-UDS8CQ6E:~$ vim fruites.txt
 ubuntu@LAPTOP-UDS8CQ6E:~$ cat fruites.txt
@@ -104,7 +103,7 @@ i am student of polytechnic 2nd years
 i am from up tantpur in current live in bari rajasthan
 my father is pradhan
 my mother is housewife
-i want to becone devops engoneer
+i want to becone devops engineer
 i like playing cricket
 i am also enjoy playing crickrt and listing music
 we are 10 members in my family including me
