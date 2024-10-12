@@ -1,4 +1,4 @@
-grep  #  the grep command use to search for patterns or string within file or input data displaying lines that match the 
+grep  #  the grep command use to search for patterns or string within file or input data displaying lines that match the specified pattern
 {Example}
 -rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
 ubuntu@LAPTOP-UDS8CQ6E:~$ grep am testing
