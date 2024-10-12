@@ -60,7 +60,7 @@ output: #   Downloads
               sachin
               README.md
 
-tree -N # s used to display the directory structure in a format that avoids color coding and treats all filenames as plain text.
+tree -N # is used to display the directory structure in a format that avoids color coding and treats all filenames as plain text.
 # example: tree -N Downloads
 output: #  Downloads
               ├── aman
@@ -76,7 +76,7 @@ output:          "Downloads"
                     └── "sachin"
                            └── "README.md"
 
-tree -u # is an option used with the tree command to display the user (owner) of each file and directory in the output
+tree -u #  is an option used with the tree command to display the user (owner) of each file and directory in the output
 # example: tree -u Downloads
 output: # [ubuntu  ]  Downloads
           ├── [ubuntu  ]  aman
@@ -84,7 +84,7 @@ output: # [ubuntu  ]  Downloads
           └── [ubuntu  ]  sachin
                 └── [ubuntu  ]  README.md
 
-tree -g # is used to display a directory structure while also showing the group ownership of files and directories. 
+tree -g #   is used to display a directory structure while also showing the group ownership of files and directories. 
 # example: tree -g Downloads
 output: #   [ubuntu  ]  Downloads
             ├── [ubuntu  ]  aman
@@ -100,7 +100,7 @@ output: #   [ubuntu  ]  Downloads
              └── [       4096]  sachin
                  └── [          0]  README.md
 
-tree -h # is used to display the contents of directories in a tree-like format, with the additional feature of showing the sizes of files in a human-readable format
+tree -h #  is used to display the contents of directories in a tree-like format, with the additional feature of showing the sizes of files in a human-readable format
 # example: tree -h Downloads
 output: #   [4.0K]  Downloads
             ├── [4.0K]  aman
@@ -124,7 +124,7 @@ output: #   [Oct 12 13:36]  Downloads
             └── [Oct 12 13:37]  sachin
                 └── [Oct 12 13:37]  README.md
 
-tree -U #   is used to display the directory structure with Unicode characters for drawing the tree branches.
+tree -U #  is used to display the directory structure with Unicode characters for drawing the tree branches.
 # example: tree -U Downloads
 output:  #   Downloads
              ├── aman
