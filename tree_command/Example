@@ -1,0 +1,223 @@
+tree  #  this command use to display the directory structure of a path or directory in a tree like formet
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree a
+a
+└── b
+    ├── c
+    │   └── d
+    │       └── e
+    │           └── f
+    │               ├── g
+    │               │   └── h
+    │               │       └── i
+    │               │           └── j
+    │               │               └── k
+    │               │                   ├── l
+    │               │                   │   └── m
+    │               │                   │       └── n
+    │               │                   │           └── o
+    │               │                   │               ├── p
+    │               │                   │               │   └── q
+    │               │                   │               │       └── r
+    │               │                   │               │           └── s
+    │               │                   │               │               └── t
+    │               │                   │               │                   └── u
+    │               │                   │               │                       └── v
+    │               │                   │               │                           └── w
+    │               │                   │               │                               └── x
+    │               │                   │               │                                   └── y
+    │               │                   │               │                                       └── z
+    │               │                   │               └── test.py
+    │               │                   └── raja.yml
+    │               └── test.txt
+    └── test
+
+tree -d   #  this command use to show lists only directories, ignoring the files
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -d a
+a
+└── b
+    └── c
+        └── d
+            └── e
+                └── f
+                    └── g
+                        └── h
+                            └── i
+                                └── j
+                                    └── k
+                                        └── l
+                                            └── m
+                                                └── n
+                                                    └── o
+                                                        └── p
+                                                            └── q
+                                                                └── r
+                                                                    └── s
+                                                                        └── t
+                                                                            └── u
+                                                                                └── v
+                                                                                    └── w
+                                                                                        └── x
+                                                                                            └── y
+                                                                                                └── z
+
+tree -f   #   this command use to  displays the full path of each file and directory in the directory tree
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -f a
+a
+└── a/b
+    ├── a/b/c
+    │   └── a/b/c/d
+    │       └── a/b/c/d/e
+    │           └── a/b/c/d/e/f
+    │               ├── a/b/c/d/e/f/g
+    │               │   └── a/b/c/d/e/f/g/h
+    │               │       └── a/b/c/d/e/f/g/h/i
+    │               │           └── a/b/c/d/e/f/g/h/i/j
+    │               │               └── a/b/c/d/e/f/g/h/i/j/k
+    │               │                   ├── a/b/c/d/e/f/g/h/i/j/k/l
+    │               │                   │   └── a/b/c/d/e/f/g/h/i/j/k/l/m
+    │               │                   │       └── a/b/c/d/e/f/g/h/i/j/k/l/m/n
+    │               │                   │           └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o
+    │               │                   │               ├── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p
+    │               │                   │               │   └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q
+    │               │                   │               │       └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r
+    │               │                   │               │           └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s
+    │               │                   │               │               └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t
+    │               │                   │               │                   └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u
+    │               │                   │               │                       └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v
+    │               │                   │               │                           └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w
+    │               │                   │               │                               └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x
+    │               │                   │               │                                   └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y
+    │               │                   │               │                                       └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/p/q/r/s/t/u/v/w/x/y/z
+    │               │                   │               └── a/b/c/d/e/f/g/h/i/j/k/l/m/n/o/test.py
+    │               │                   └── a/b/c/d/e/f/g/h/i/j/k/raja.yml
+    │               └── a/b/c/d/e/f/test.txt
+    └── a/b/test
+
+tree -L   #   this command use to Limits the depth of the directory tree
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -L 5 a
+a
+└── b
+    ├── c
+    │   └── d
+    │       └── e
+    │           └── f
+    └── test
+
+tree -a   #   this command use to show all Show hidden files
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -a
+/home/ubuntu
+├── .hiddenfile
+├── documents
+│   ├── file1.txt
+│   ├── file2.txt
+│   └── .hidden_doc
+└── images
+    ├── photo1.jpg
+    └── .hidden_photo
+
+tree -s   #   this command use to Show file and directory sizes
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -s a
+[       4096]  a
+└── [       4096]  b
+    ├── [       4096]  c
+    │   └── [       4096]  d
+    │       └── [       4096]  e
+    │           └── [       4096]  f
+    │               ├── [       4096]  g
+    │               │   └── [       4096]  h
+    │               │       └── [       4096]  i
+    │               │           └── [       4096]  j
+    │               │               └── [       4096]  k
+    │               │                   ├── [       4096]  l
+    │               │                   │   └── [       4096]  m
+    │               │                   │       └── [       4096]  n
+    │               │                   │           └── [       4096]  o
+    │               │                   │               ├── [       4096]  p
+    │               │                   │               │   └── [       4096]  q
+    │               │                   │               │       └── [       4096]  r
+    │               │                   │               │           └── [       4096]  s
+    │               │                   │               │               └── [       4096]  t
+    │               │                   │               │                   └── [       4096]  u
+    │               │                   │               │                       └── [       4096]  v
+    │               │                   │               │                           └── [       4096]  w
+    │               │                   │               │                               └── [       4096]  x
+    │               │                   │               │                                   └── [       4096]  y
+    │               │                   │               │                                       └── [       4096]  z
+    │               │                   │               └── [          0]  test.py
+    │               │                   └── [          0]  raja.yml
+    │               └── [          0]  test.txt
+    └── [          0]  test
+
+tree -X   #   this command use to show Output in XML format
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -X a
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="a">
+    <directory name="b">
+      <directory name="c">
+        <directory name="d">
+          <directory name="e">
+            <directory name="f">
+              <directory name="g">
+                <directory name="h">
+                  <directory name="i">
+                    <directory name="j">
+                      <directory name="k">
+                        <directory name="l">
+                          <directory name="m">
+                            <directory name="n">
+                              <directory name="o">
+                                <directory name="p">
+                                  <directory name="q">
+                                    <directory name="r">
+                                      <directory name="s">
+                                        <directory name="t">
+                                          <directory name="u">
+                                            <directory name="v">
+                                              <directory name="w">
+                                                <directory name="x">
+                                                  <directory name="y">
+                                                    <directory name="z"></directory>
+                                                </directory>
+                                              </directory>
+                                            </directory>
+                                          </directory>
+                                        </directory>
+                                      </directory>
+                                    </directory>
+                                  </directory>
+                                </directory>
+                              </directory>
+                                <file name="test.py"></file>
+                            </directory>
+                          </directory>
+                        </directory>
+                      </directory>
+                        <file name="raja.yml"></file>
+                    </directory>
+                  </directory>
+                </directory>
+              </directory>
+            </directory>
+              <file name="test.txt"></file>
+          </directory>
+        </directory>
+      </directory>
+    </directory>
+      <file name="test"></file>
+  </directory>
+  </directory>
+  <report>
+    <directories>25</directories>
+    <files>4</files>
+  </report>
+</tree>
+
+                                                                                             
