@@ -154,8 +154,40 @@ ubuntu@LAPTOP-UDS8CQ6E:~$ tree -s a
     │               └── [          0]  test.txt
     └── [          0]  test
 
-tree -X   #   this command use to show Output in XML format
+tree -p   #   this command use to  display the directory structure of a path or directory and show the file or directory permission
 {Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ tree -p a
+[drwxr-xr-x]  a
+└── [drwxr-xr-x]  b
+    ├── [drwxr-xr-x]  c
+    │   └── [drwxr-xr-x]  d
+    │       └── [drwxr-xr-x]  e
+    │           └── [drwxr-xr-x]  f
+    │               ├── [drwxr-xr-x]  g
+    │               │   └── [drwxr-xr-x]  h
+    │               │       └── [drwxr-xr-x]  i
+    │               │           └── [drwxr-xr-x]  j
+    │               │               └── [drwxr-xr-x]  k
+    │               │                   ├── [drwxr-xr-x]  l
+    │               │                   │   └── [drwxr-xr-x]  m
+    │               │                   │       └── [drwxr-xr-x]  n
+    │               │                   │           └── [drwxr-xr-x]  o
+    │               │                   │               ├── [drwxr-xr-x]  p
+    │               │                   │               │   └── [drwxr-xr-x]  q
+    │               │                   │               │       └── [drwxr-xr-x]  r
+    │               │                   │               │           └── [drwxr-xr-x]  s
+    │               │                   │               │               └── [drwxr-xr-x]  t
+    │               │                   │               │                   └── [drwxr-xr-x]  u
+    │               │                   │               │                       └── [drwxr-xr-x]  v
+    │               │                   │               │                           └── [drwxr-xr-x]  w
+    │               │                   │               │                               └── [drwxr-xr-x]  x
+    │               │                   │               │                                   └── [drwxr-xr-x]  y
+    │               │                   │               │                                       └── [drwxr-xr-x]  z
+    │               │                   │               └── [-rw-r--r--]  test.py
+    │               │                   └── [-rw-r--r--]  raja.yml
+    │               └── [-rw-r--r--]  test.txt
+    └── [-rw-r--r--]  test
+
 ubuntu@LAPTOP-UDS8CQ6E:~$ tree -X a
 <?xml version="1.0" encoding="UTF-8"?>
 <tree>
@@ -218,6 +250,4 @@ ubuntu@LAPTOP-UDS8CQ6E:~$ tree -X a
     <directories>25</directories>
     <files>4</files>
   </report>
-</tree>
-
                                                                                              

@@ -15,3 +15,4 @@ tree -s   #   this command use to Show file and directory sizes
 
 tree -X   #   this command use to show Output in XML format
 
+tree -p   #   this command use to  display the directory structure of a path or directory and show the file or directory permission
