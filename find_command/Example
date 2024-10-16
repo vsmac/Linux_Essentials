@@ -1,0 +1,89 @@
+ find . -name "filename"   #  this command use to Find all files named filename in the current directory and subdirectoris
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -name raja
+./test.txt/raja
+
+find /path/to/directory -type d -name "testing"   #  this command use to Find directories by name
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -type d -name testing
+./test.txt/testing
+
+find /path/to/directory -size +100M   #  this command use to Find all files larger than 100MB
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -size +100M
+./aman
+./nishant
+
+find /path/to/directory -size -10k    #   this comand use to Find all files smaller than 10KB
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -size -10k
+./wordpress--setup
+./example.txt
+./nishant.txt
+./wordpress
+./wordpress/default.conf
+./wordpress/default1
+
+find /path/to/directory -mtime -7     #   this command use to Find files modified in the last 7 days
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -mtime -7
+.
+./aman
+./wordpress--setup
+./wordpress--setup/.git
+./wordpress--setup/.git/info
+./wordpress--setup/.git/info/exclude
+./wordpress--setup/.git/refs
+./wordpress--setup/.git/refs/remotes
+./wordpress--setup/.git/refs/remotes/origin
+./wordpress--setup/.git/refs/remotes/origin/HEAD
+./wordpress--setup/.git/refs/tags....
+
+find /path/to/directory -mtime +10    #   this command use to Find files modified more than 10 days ago
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -mtime +10
+./file1.txt
+./logs/error.log
+./backup/data.tar.gz
+./images/photo1.jpg
+
+find /path/to/directory -perm 777     #   this command use to Find files with 755 permissions
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -perm 777
+./example
+./example.txt
+./host.txt
+
+find /path/to/directory -type f -empty   #   this command use to find all empty fils
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -type f -empty
+./.motd_shown
+./.cache/motd.legal-displayed
+./.vscode-server/bin/legacy-mode
+./.sudo_as_admin_successful
+./example
+./example.txt
+./.landscape/sysinfo.log
+./raja.txt
+./host.txt
+
+find /path/to/directory -type d -empty   #    this command use to find all empty directory
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -type d -empty
+./wordpress--setup/.git/refs/tags
+./wordpress--setup/.git/branches
+./wordpress--setup/.git/objects/info
+./wordpress/.git/refs/tags
+./wordpress/.git/branches
+./wordpress/.git/objects/info
+./GITHUB_action/.git/refs/tags
+./GITHUB_action/.git/branches
+./GITHUB_action/.git/objects/info
+./GITHUB/linux/.git/refs/tags
+
+find /path/to/directory -user username   #    this command use to Find files owned by a specific user
+{Example}
+-rwxrwxrwx  1 raja   raja            0 Oct 15 18:26 example
+ubuntu@LAPTOP-UDS8CQ6E:~$ find . -user raja
+./example
+
