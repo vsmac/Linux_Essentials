@@ -1,0 +1,54 @@
+passwd   #   this command used to change a user's password
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ passwd
+Changing password for ubuntu.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+
+sudo passwd username   #   this command used to change the password of the specified user with superuser (root) privileges
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sudo passwd raja
+New password:
+Retype new password:
+passwd: password updated successfully
+
+sudo passwd -l username    #   this command use to Lock a User's Account
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sudo passwd -l raja
+passwd: password expiry information changed.
+ubuntu@LAPTOP-UDS8CQ6E:~$ su raja
+Password:
+su: Authentication failure
+
+sudo passwd -u username    #   this command use to unlock a user's account
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sudo passwd -u raja
+passwd: password expiry information changed.
+ubuntu@LAPTOP-UDS8CQ6E:~$ su raja
+Password:
+raja@LAPTOP-UDS8CQ6E:/home/ubuntu$
+
+sudo passwd -d username    #   this command used to delete username password
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sudo passwd -d raja
+passwd: password expiry information changed.
+ubuntu@LAPTOP-UDS8CQ6E:~$ su raja
+raja@LAPTOP-UDS8CQ6E:/home/ubuntu$
+
+sudo passwd -e username    #    this command use to  Expires the password, forcing the user to change it on the next login
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sudo passwd -e sachin
+passwd: password expiry information changed.
+ubuntu@LAPTOP-UDS8CQ6E:~$ su sachin
+Password:
+You are required to change your password immediately (administrator enforced).
+Changing password for sachin.
+Current password:
+New password:
+Retype new password:
+passwd: password updated successfully
+sachin@LAPTOP-UDS8CQ6E:/home/ubuntu$ 
+
+
