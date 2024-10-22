@@ -1,5 +1,5 @@
 finger 
-# example:  "finger"   # displays information about system users. 
+# example: "finger"   # displays information about system users. 
 output: # Login     Name       Tty      Idle  Login Time   Office     Office Phone
           ubuntu    ubuntu     seat0          Oct 21 16:14 (login screen)
           ubuntu    ubuntu     tty2       1d  Oct 21 16:14 (tty2)
