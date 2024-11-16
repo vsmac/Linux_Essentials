@@ -1,0 +1,113 @@
+sort   #  is sorts the contents of a text file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat file.txt
+RAJA
+NISHANT
+AMAN
+BHOLA
+raja
+nishant
+bhola
+aman
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort file.txt
+AMAN
+BHOLA
+NISHANT
+RAJA
+aman
+bhola
+nishant
+raja
+
+sort -r   #   this command use to revers the order
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort -r file.txt
+raja
+nishant
+bhola
+aman
+RAJA
+NISHANT
+BHOLA
+AMAN
+
+sort -n   #   this command use to numeric sorting
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat test
+000
+111
+555
+666
+999
+777
+444
+333
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort -n test
+000
+111
+333
+444
+555
+666
+777
+999
+
+sort -u  filename    #   this column use to sort the lines and remove any duplicate lines
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat testing
+apple
+banana
+apple
+cherry
+banana
+banana
+mango
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort -u testing
+apple
+banana
+cherry
+mango
+
+sort filename > sorted.txt   #   this command use to Sort Without Changing the Original File (Output to Another File)
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort test > sorted.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat test
+zebra
+apple
+mango
+banana
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort test > tes2
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat tes2
+apple
+banana
+mango
+zebra
+ sort -f filename.txt    #    this command use to  ignore case distinctions and perform case-insensitive sorting
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat txt
+banana
+Apple
+cherry
+apple
+Banana
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort -f txt
+Apple
+apple
+Banana
+banana
+cherry
+
+sort -k 2 filename   #   this command use to sort by a specific field or column in the file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat student
+101 rohit 85
+102 mohan 75
+103 anjali 95
+104 sunil 65
+105 suman 55
+ubuntu@LAPTOP-UDS8CQ6E:~$ sort -k 2 student
+103 anjali 95
+102 mohan 75
+101 rohit 85
+105 suman 55
+104 sunil 65

@@ -1,0 +1,155 @@
+grep  #  the grep command use to search for patterns or string within file or input data displaying lines that match the specified pattern
+{Example}
+-rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep am testing
+i am raja gaur
+i am 18 years old
+i am student of polytechnic 2nd years
+i am from up tantpur in current live in bari rajasthan
+i am also enjoy playing crickrt and listing music
+we are 10 members in my family including me
+
+grep -i  # this command use to  case-insensitive search for a  pattern in files or input data, matching lines regardless of letter case
+{Example}
+-rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -i 'AM' testing
+i am raja gaur
+i am 18 years old
+i am student of polytechnic 2nd years
+i am from up tantpur in current live in bari rajasthan
+i am also enjoy playing crickrt and listing music
+we are 10 members in my family including me
+
+grep -v  #  this command use to invert the match, meaning it displays lines that do not contain the specified pattern
+{Example}
+-rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -v am testing
+my father is pradhan
+my mother is housewife
+i want to becone devops engoneer
+i like playing cricket
+
+grep -w  #  this command use to searches for lines that contain whole words that match the specified pattern
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -w am testing
+-rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
+i am raja gaur
+i am 18 years old
+i am student of polytechnic 2nd years
+i am from up tantpur in current live in bari rajasthan
+i am also enjoy playing crickrt and listing music
+
+grep -r  #  this command use to seaches for lines that comtain Recursive Search
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -r  python /bin
+/bin/apport-cli:£!/usr/bin/python3
+/bin/py3compile:£! /usr/bin/python3
+/bin/py3compile:sys.path.insert(1, '/usr/share/python3/')
+/bin/py3compile:from debpython.version import SUPPORTED, debsorted, vrepr, \
+/bin/py3compile:from debpython import files as dpf, PUBLIC_DIR_RE, memoize
+/bin/py3compile:from debpython.interpreter import Interpreter
+/bin/py3compile:from debpython.option import Option, compile_regexpr
+/bin/py3compile:    pycompile -p python3-mako £ package's public files
+/bin/py3compile:    pycompile -p python3-foo /usr/share/foo £ package's private files
+/bin/py3compile:    pycompile -V 3.1 /usr/lib/python3.1/ £ python3.1 only
+/bin/py3compile:    pycompile -V 3.1 /usr/lib/foo/bar.py £ python3.1 only
+/bin/py3compile:    pycompile -V 3.2- /usr/lib/python3/
+/bin/py3compile:def get_exclude_patterns_from_dir(name='/usr/share/python3/bcep/'):
+/bin/py3compile:    cmd = "/usr/bin/python%s%s -m py_compile -" \
+/bin/py3compile:    interpreter = Interpreter('python' if not optimize else 'python -O')
+/bin/py3compile:                     'only, please use /usr/share/python3/bcep to specify '
+/bin/py3compile:            exists("/usr/bin/python%d.%d" % options.vrange[0]):
+/bin/ansible-doc:£!/usr/bin/python3
+/bin/landscape-release-upgrader:£!/usr/bin/python3
+/bin/py3clean:£! /usr/bin/python3
+/bin/py3clean:sys.path.insert(1, '/usr/share/python3/')
+/bin/py3clean:from debpython import files as dpf
+/bin/py3clean:from debpython.interpreter import Interpreter
+/bin/py3clean:from debpython.version import SUPPORTED, getver, vrepr
+/bin/py3clean:    py3clean -p python3-mako £ all .py[co] files and __pycache__ directories from the package
+/bin/py3clean:    py3clean /usr/lib/python3.1/dist-packages £ python3.1
+/bin/py3clean:    py3clean -V 3.3 /usr/lib/python3/ £ python 3.3 only
+
+grep -n  #  this command  use to displays the matching lines along with their line numbers from a specified file
+{Example}
+-rw-r--r--  1 ubuntu ubuntu      323 Oct 11 16:00 testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -n am testing
+1:i am raja gaur
+2:i am 18 years old
+3:i am student of polytechnic 2nd years
+4:i am from up tantpur in current live in bari rajasthan
+9:i am also enjoy playing crickrt and listing music
+10:we are 10 members in my family including me
+
+grep -x   #  this command use to searches for lines in a file that match the specified pattern exactly, 
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ vim fruites.txt
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat fruites.txt
+apple
+banana
+apple pie
+apple
+orange
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -x apple fruites.txt
+apple
+apple
+
+grep -E  #  this command use to search for  multiple pattern in a file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -E "i|am" testing
+i am raja gaur
+i am 18 years old
+i am student of polytechnic 2nd years
+i am from up tantpur in current live in bari rajasthan
+my father is pradhan
+my mother is housewife
+i want to becone devops engineer
+i like playing cricket
+i am also enjoy playing crickrt and listing music
+we are 10 members in my family including me
+
+grep -c  #  this command use to  count the number of lines that match a specified pattern in a file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -c apple fruites.txt
+3
+
+grep -o  #  this command use to display only the matching part of the lines, rather than the entire line.
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -o am testing
+am
+am
+am
+am
+am
+am
+
+grep -B 1 "petten" filename   #    this command use to search gor the "patten" in a file Shows 1 lines before the matching line
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -B 1 "raja" example
+This is line three.
+This is the raja line
+
+grep -A 1 "patten" filename   #  this command use to search gor the "patten" in a file Shows 1 lines after the matching line
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -A 1 "raja" example
+This is the raja line.
+This is line five
+
+grep -c 1 "patten" filename   #   this command use to search for the "patten" in a file show Both Before and After
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -C 1 "raja" example
+This is line three.
+This is the raja line.
+This is line five
+
+grep -m 1 "patten" filename   #  this command use to search for the "patten" in Limits the output to the first 1 matches
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -m 1 "mango" sachin
+This is line one with mango
+
+grep -s "patten" filename    #   this command use to search for the "patten" and will display only those lines in which "patten" is found
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ grep -s "raja" testing
+i am raja gaur
+i am from up tantpur in current live in bari rajasthan
+
