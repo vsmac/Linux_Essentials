@@ -1,4 +1,4 @@
-#  what is uname command
+ what is uname command
   uname command is used to print the system information.
 
   uname
