@@ -1,0 +1,129 @@
+sed -n '2p' filename   #  print only second line in file
+{Example}``
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat testing
+1. i am raja gaur
+2. i am student of polytechnic collage
+3. i am 19 years old
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+6. i also enjoy playing cricket and listen music
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '2p' testing
+2. i am student of polytechnic collage
+
+
+sed -n '2,5p' filename   #  print only 2 to 5 line in file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '2,5p' testing
+2. i am student of polytechnic collage
+3. i am 19 years old
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+
+
+sed -n '$p' filename   #  print only last line in file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '$p' testing
+6. i also enjoy playing cricket and listen music
+
+
+sed -n '/india/p' filename   # print  all India users in file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat data
+ID name salary country
+1. raja 45000 india
+2. nishant 35000 usa
+3. aman 50000 Germany
+4. bhola 70000 usa
+5. kaushal 55000 japan
+6.sachin 3000 india
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '/india/p' data
+1. raja 45000 india
+6.sachin 3000 india
+
+
+sed -n -e '/india/p' -e '/Germany/p' filename     #  This command in Linux prints lines from the file data that match either the pattern india or  Germany
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n -e '/india/p' -e '/Germany/p' data
+1. raja 45000 india
+3. aman 50000 Germany
+6.sachin 3000 india
+
+
+sed -n '2,+4p' filename    #  this command use to  prints lines from line 2 to line 6 (4 lines starting from line 2) in the file
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '2,+4p' testing
+2. i am student of polytechnic collage
+3. i am 19 years old
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+6. i also enjoy playing cricket and listen music
+
+
+sed -n '1~2p' filename    #  print every odd number line staring from line 1
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat test
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n '1~2p' test
+1
+3
+5
+7
+9
+
+
+sed -f script_file inputfile     #  this command( use to applies a series of sed command stored in the scriptfile to the inputfile
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat > external
+1p
+3p
+5p
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -n -f external testing
+1. i am raja gaur
+3. i am 19 years old
+5. i want to become devops engineer
+
+
+sed 's/oldword/newword/g' filename   # this command use to replace a word in a file and disply the result in linux
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat testing
+1. i am raja gaur
+2. i am student of polytechnic collage
+3. i am 19 years(old)
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+6. i also enjoy playing cricket and listen music
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed 's/old/new/g' testing
+1. i am raja gaur
+2. i am student of polytechnic collage
+3. i am 19 years (new)
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+6. i also enjoy playing cricket and listen music
+
+          ## if you want to replace word in the file permanetly (use optipnal -i)
+sed -i 's/i/my/g' filename    # this command use to replace word in file permanetly saves
+{Example}
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat testing
+1. i am raja gaur
+2. i am student of polytechnic collage
+3. i am 19 years old
+4. i am from up in tantpur i current live in bari rajasthan
+5. i want to become devops engineer
+6. i also enjoy playing cricket and listen music
+ubuntu@LAPTOP-UDS8CQ6E:~$ sed -i 's/i/my/g' testing
+ubuntu@LAPTOP-UDS8CQ6E:~$ cat testing
+1. my am raja gaur
+2. my am student of polytechnmyc collage
+3. my am 19 years old
+4. my am from up myn tantpur my current lmyve myn barmy rajasthan
+5. my want to become devops engmyneer
+6. my also enjoy playmyng crmycket and lmysten musmyc
