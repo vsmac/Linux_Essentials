@@ -4,30 +4,30 @@
 # *These are argument for date command
  
  
- 1. date +%d      # used to display Day of the month (01-31)
-     {example}  02
- 
- 2. date +%D      # used to display date (%m/%d/%y)
-     {example}  10/02/24
- 
- 3. date +%a      # used to display weekday name (Wed)
+ 1.date +%a      # used to display weekday name (Wed)
       {example}  Wed
  
- 4. date +%A      # used to display weekday name (Wednesday)
+ 2.date +%A      # used to display weekday name (Wednesday)
       {example}  Wednesday
  
- 5. date +%b      # used to display month name  (Oct)
+ 3.date +%b      # used to display month name  (Oct)
       {example}   Oct
  
- 6. date +%B      # used to display month name  (October)
+ 4. date +%B      # used to display month name  (October)
      {example}    October
  
- 7. date +%c      # used to display date and time (Wed Oct  2 07:56:06 2024) 
+ 5. date +%c      # used to display date and time (Wed Oct  2 07:56:06 2024) 
      {example}    Wed Oct  2 07:56:06 2024
  
- 8. date +%C      # used to display first two digit of year  (2024 , 20)
+ 6. date +%C      # used to display first two digit of year  (2024 , 20)
       {example}     20
  
+ 7. date +%d      # used to display Day of the month (01-31)
+     {example}  02
+ 
+ 8. date +%D      # used to display date (%m/%d/%y)
+     {example}  10/02/24
+
  9. date +%e      # used to display day of month (%d)
        {example}    2
  
