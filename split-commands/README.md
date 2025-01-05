@@ -9,6 +9,5 @@ split -n
 split -b
 # example "split -b 1m test txt"  used to split a file into smaller parts based on a specified size in bytes. 
 
-split d
-# example "split -d -l 5 test txt" is used to split a file into smaller parts with numeric suffixes
-
+split -d
+# example "split -d -l 5 test txt" is used to split a file into smaller parts with numeric  suffixes
